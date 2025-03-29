@@ -1,5 +1,5 @@
 node_modules/
 package-lock.json
 src/
-gulpfile.json
-package-lock.json
+gulpfile.js
+package.json
