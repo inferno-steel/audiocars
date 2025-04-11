@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Личный кабинет</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -118,6 +118,51 @@
     </div>
 </header>
     <main>
+        <section class="account">
+            <div class="account__container container">
+                <div class="account__card card-account">
+                    <h2 class="card-account__title title">Вход</h2>
+                    <div class="card-account__wrap">
+                        <form action="" class="form-account">
+                            <label class="form-account__label">Имя пользователя или Номер телефона</label>
+                            <input class="form-account__input" type="text">
+                            <label class="form-account__label">Пароль</label>
+                            <input class="form-account__input" type="password">
+                            <div class="form-account__inner">
+                                <button class="form-account__btn button">Войти</button>
+                                <div class="form-account__checkbox">
+                                    <input class="form-account__check" type="checkbox">
+                                    <span>Запомнить меня</span>
+                                </div>
+                                
+                            </div>
+                            <a class="form-account__link" href="#">
+                                <p>Забыли свой пароль?</p>
+                            </a>
+                        </form>
+                    </div>
+                </div>
+                <div class="account__card card-account">
+                    <h2 class="card-account__title title">Регистрация</h2>
+                    <div class="card-account__wrap">
+                        <form action="" class="form-account">
+                            <label class="form-account__label">Ваше имя</label>
+                            <input class="form-account__input" type="text">
+                            <label class="form-account__label">Номер телефона</label>
+                            <input class="form-account__input" type="number">
+                            <div class="form-account__inner">
+                                <button class="form-account__btn button">Зарегистрироваться</button>
+                            </div>
+                            <p class="form-account__text">
+                                Ваши личные данные будут использоваться для упрощения вашего дальнейшего 
+                                взаимодействия с сайтом, управления доступом к вашему аккаунту и других целей, 
+                                описанных в документе <span>политика конфиденциальности</span>.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
     <div class="footer__container container">
@@ -182,8 +227,7 @@
         </div>
         
     </div>
-</footer> 
-
-    <script src="js/main.min.js"></script>
+</footer>    
+<script src="js/main.min.js"></script>
 </body>
 </html>
