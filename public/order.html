@@ -92,7 +92,7 @@
                 <nav class="header-bottom__menu menu">
                     <ul class="header-bottom__list menu__list" >
                         <li class="menu__item">
-                            <a class="menu__link" href="order.html" data-link="catalog">Каталог</a>
+                            <a class="menu__link" href="catalog.html" data-link="catalog">Каталог</a>
                         </li>
                         <li class="menu__item">
                             <a class="menu__link" href="#" data-link="services">Услуги</a>
@@ -185,7 +185,46 @@
         
     </div>
 </footer> 
-
+    <div class="modal">
+    <div class="modal__wrap">
+        <a class="modal__close" href="#">
+            <svg class="svg-close">
+                <use xlink:href="img/icons/svg-sprite.svg#svg-close"></use>
+            </svg>
+        </a>
+        <div class="modal__content">
+            <h3 class="modal__title">Заказать обратный звонок</h3>
+            <p class="modal__text">
+                Оставьте свои контакты и наш менеджер свяжется с Вами в ближайшее время.
+            </p>
+        </div>
+        <div class="modal__form">
+            <input class="modal__input" type="text" placeholder="Введите имя">
+            <input class="modal__input" type="text" placeholder="Номер">
+            <button class="modal__btn">Отправить</button>
+        </div>
+        <p class="modal__copyright">Нажимая на кнопку «Отправить»,
+            Вы даете согласие на обработку персональных данных в соответствии 
+            с <a href="#">Политикой конфиденциальности</a>
+        </p>
+    </div>
+</div>
+<div class="modal modal-success">
+    <div class="modal__wrap">
+        <a class="modal__close" href="#">
+            <svg class="svg-close">
+                <use xlink:href="img/icons/svg-sprite.svg#svg-close"></use>
+            </svg>
+        </a>
+        <div class="modal__content">
+            <h3 class="modal__title">Ваша заявка отправлена!</h3>
+            <p class="modal__text">
+                Менеджер свяжется с Вами в ближайшее время.
+            </p>
+            <button class="modal__btn">За покупками</button>
+        </div>
+    </div>
+</div> 
     <script src="js/main.min.js"></script>
 </body>
 </html>
