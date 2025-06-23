@@ -1,0 +1,38 @@
+.erorr{
+    margin-bottom: 140px;
+
+    &__title{
+        display: none;
+    }
+
+    &__wrap{
+        max-width: 938px;
+        text-align: end;
+    }
+
+    &__content{
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    &__img{
+        margin-bottom: 60px;
+    }
+
+    @media (max-width: $tablet) { 
+        &__wrap{
+            text-align: center;
+        }
+
+        &__content{
+            font-size: 16px;
+        }
+
+        &__btn{
+            width: 100%;
+            padding: 12.5px 0;
+        }
+    }
+}

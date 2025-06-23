@@ -1,0 +1,310 @@
+.sorting{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 10px;
+
+    &__brend{
+        margin-right: 50px;
+    }
+
+    &__list{
+        display: flex;
+        gap: 19px;
+        position: relative;
+        border-radius: 5px;
+        background: $mainWhite;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &::before{
+            content: "";
+            position: absolute;
+            inset: -1px;
+            background: $gradientSecond;
+            border-radius: 6px;
+            z-index: -1;
+        }
+    }
+
+    &__item{
+        min-width: 130px;
+        text-align: center;
+        padding: 6px 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: .2s ease;
+
+        &:hover{
+            color: $mainWhite;
+            background-color: $mainRed;
+        }
+    }
+
+    &__reset{
+        display: flex;
+    }
+
+    @media (max-width: $tablet) {
+        &__brend{
+            margin-right: auto;
+        }
+    } 
+
+    @media (max-width: $tabletM) {
+        justify-content: center;
+
+        &__reset{
+            display: none;
+        }
+
+        &__brend{
+            flex: 1 1 auto;
+        }
+
+        &__price{
+            flex: 1 1 auto;
+            justify-content: space-between;
+        }
+    }
+}
+
+.price-sorting{
+    display: flex;
+    flex-direction: column;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-basis: 300px;
+    margin-right: auto;
+
+
+    &__wrap{
+        position: absolute;
+        border: 1px solid transparent;
+        top: -13px;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        border-radius: 6px;
+        background: linear-gradient(#000, $mainWhite 0) padding-box, linear-gradient(175deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 160%) border-box;
+    }
+
+    &__visible{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px 10px;
+    }
+
+    &__hidden{
+        max-height: 0px;
+        overflow: hidden;
+        padding: 0 10px;
+        box-sizing: content-box;
+    }
+
+    &__inner{
+        margin-bottom: 15px;
+    }
+
+    &__inner:first-child{
+        margin-top: 10px;
+    }
+}
+
+.catalog{
+    &__wrap{
+        display: flex;
+        gap: 68px;
+        text-transform: uppercase;
+    }
+
+    &__filter{
+        flex: 1 1 16.4%;
+    }
+
+    &__product{
+        flex: 1 1 80%;
+    }
+
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 15px;
+        margin-bottom: 140px;
+        margin-top: 30px;
+    }
+
+    @media (max-width: $tablet) {
+        &__list{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (max-width: $tabletM) {
+        &__list{
+            grid-template-columns: 1fr;
+            margin-bottom: 90px;
+            margin-top: 0;
+        }
+
+        &__wrap{
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        &__sorting{
+            display: flex;
+            max-height: 0px;
+            visibility: hidden;
+            opacity: 0;
+            transition: max-height .5s ease-out, padding .5s ease-out, opacity .1s ease-out, visibility .1s ease-out;
+
+            &_active{
+                visibility: visible;
+                opacity: 1;
+                margin-bottom: 30px;
+                transition: max-height 1.5s ease-out, padding .5s ease-out, opacity 3.1s ease-out, visibility .1s ease-out;
+            }
+        }
+    }
+}
+
+.filter{
+    &__title{
+        font-weight: 700;
+    }
+
+    &__button{
+        gap: 15px;
+        position: relative;
+        border-radius: 5px;
+        background: $mainWhite;
+        padding: 8px 10px;
+        cursor: pointer;
+        margin-bottom: 20px;
+        display: none;
+
+        &::before{
+            content: "";
+            position: absolute;
+            inset: -1px;
+            background: $gradientSecond;
+            border-radius: 6px;
+            z-index: -1;
+        }
+    }
+
+    &__btn{
+        text-transform: uppercase;
+    }
+
+    &__reset{
+        display: none;
+    }
+
+    &__categories, &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    &__inner{
+        padding: 0 13px;
+        margin-bottom: 8px;
+    }
+
+    &__categories{
+        margin-bottom: 34px;
+        position: relative;
+        border-radius: 5px;
+        background: $mainWhite;
+        padding: 8px 10px;
+
+        &::before{
+            content: "";
+            position: absolute;
+            inset: -1px;
+            background: $gradientSecond;
+            border-radius: 5px;
+            z-index: -1;
+        }
+    }
+
+    &__content{
+        opacity: 0;
+        visibility: hidden;
+        transition: max-height 0.5s ease-out, padding 0.5s ease-out, opacity 0.1s ease-out, visibility 0.1s ease-out 0.5s;
+        overflow: hidden;
+        max-height: 0;
+
+        &_active{
+            visibility: visible;
+            opacity: 1;
+            transition: max-height 0.5s ease-out, padding 0.5s ease-out, opacity 0.1s ease-out, visibility 0.1s ease-out;
+        }
+    }
+
+    &__card{
+        margin-bottom: 9px;
+        cursor: pointer;
+    }
+
+    &__item{
+        padding: 8px 0 8px 22px;
+        transition: .2s ease;
+        cursor: pointer;
+        border-radius: 5px;
+
+        &:hover{
+            color: $mainWhite;
+            background-color: $mainRed;
+        }
+    }
+    
+    @media (max-width: $tabletM) {
+        &__button{
+            display: inline-flex;
+            margin-bottom: 0px;
+        }
+
+        &__reset{
+            display: inline-flex;
+            float: right;
+        }
+
+        &__wrap{
+            max-height: 0px;
+            max-width: 261px;
+            visibility: hidden;
+            opacity: 0;
+            transition: max-height .5s ease-out, padding .5s ease-out, opacity .1s ease-out, visibility .1s ease-out;
+
+
+            &_active{
+                visibility: visible;
+                opacity: 1;
+                margin-top: 20px;
+                transition: max-height .5s ease-out, padding .5s ease-out, opacity .1s ease-out, visibility .1s ease-out;
+            }
+
+        }
+    }
+}
+
+.reset-filter{
+    gap: 5px;
+    color: $mainRed;
+    cursor: pointer;
+    align-items: center;
+
+    &__text{
+        font-size: 14px
+    }
+}

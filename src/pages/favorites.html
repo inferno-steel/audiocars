@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Избранное</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    @@include('../components/header/header.html')
+    <main>
+        <section class="favorites">
+            <div class="favorites__container container">
+                <div class="favorites__breadcrumb">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Главная</a></li>
+                        <li>Избранное</li>
+                      </ul>
+                </div>
+                <div class="favorites__list">
+                    <div class="card-favorites">
+                        <button class="card-favorites__close">
+                            <svg class="svg-close">
+                                <use xlink:href="img/icons/svg-sprite.svg#svg-close"></use>
+                            </svg>
+                        </button>
+                        <div class="card-favorites__image">
+                            <img class="product-card__img" src="img/test-favorites.jpg" alt="">
+                        </div>
+                        <div class="card-favorites__content">
+                            <h4 class="card-favorites__title">Акустическая система MT-15NEO</h4>
+                            <div class="card-favorites__quantity">
+                                <svg class="svg-mark">
+                                    <use xlink:href="img/icons/svg-sprite.svg#svg-mark"></use>
+                                </svg>
+                                <p class="card-favorites__text">В наличии</p>
+                            </div>
+                            <div class="card-favorites__price">3200 ₽</div>
+                        </div>
+                        <div class="card-favorites__button">
+                            <a class="card-favorites__link" href="#">
+                                <svg class="svg-favorite">
+                                    <use xlink:href="img/icons/svg-sprite.svg#svg-favorite"></use>
+                                </svg>
+                            </a>
+                            <button class="card-favorites__btn button">Добавить в корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('../components/footer/footer.html')
+    @@include('../components/modal/modal.html') 
+    <script src="js/main.min.js"></script>
+</body>
+</html>

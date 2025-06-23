@@ -1,0 +1,136 @@
+// svg-иконки
+.svg-basket{
+    width: 20px;
+    height: 20px;
+    fill: #1E1E1E;
+}
+  
+.svg-favorite{
+  width: 22px;
+  height: 19px;
+  fill: none;
+  stroke:#1E1E1E;
+}
+
+.svg-users{
+  width: 18px;
+  height: 20px;
+  fill: none;
+  stroke: #1E1E1E;
+}
+
+.svg-search{
+  width: 20px;
+  height: 20px;
+  stroke: #1E1E1E;
+  fill: none;
+}
+
+.svg-compare{
+  width: 18px;
+  height: 18px;
+}
+
+.svg-close{
+  width: 18px;
+  height: 18px;
+}
+
+.svg-plus{
+  width: 18px;
+  height: 18px;
+}
+
+.svg-minus{
+  width: 18px;
+  height: 2px;
+}
+
+.svg-check{
+  width: 18px;
+  height: 13px;
+}
+
+.svg-arrow{
+  width: 18px;
+  height: 12px;
+  fill: #1E1E1E;
+}
+
+.svg-tg{
+  width: 68px;
+  height: 68px;
+  fill: #1E1E1E;
+}
+
+.svg-wa{
+  width: 68px;
+  height: 68px;
+  fill: #1E1E1E;
+}
+
+.svg-vk{
+  width: 68px;
+  height: 68px;
+  fill: #1E1E1E;
+}
+
+.svg-phone{
+  width: 32px;
+  height: 32px;
+  fill: #1E1E1E;
+}
+
+.svg-scroll{
+  width: 16px;
+  height: 87px;
+  fill: #1E1E1E;
+}
+
+.svg-mark{
+  width: 20px;
+  height: 21px;
+  fill: #00960D;
+}
+
+.svg-arrow-slider-left{
+  width: 20px;
+  height: 21px;
+  fill: #1E1E1E;
+}
+
+.svg-hide{
+  width: 12px;
+  height: 6px;
+  stroke: #1E1E1E;
+  fill: none;
+}
+
+.svg-reset{
+  width: 20px;
+  height: 19px;
+  stroke: $mainRed;
+  fill: none;
+}
+
+.svg-filter{
+  width: 18px;
+  height: 18px;
+  fill: none;
+}
+
+@media (max-width: $tablet) {
+    .svg-search{
+        width: 31px;
+        height: 31px;
+     }
+  
+     .svg-basket{
+        width: 31px;
+        height: 31px;
+     }
+  
+     .svg-scroll{
+        height: 63px;
+     }
+}

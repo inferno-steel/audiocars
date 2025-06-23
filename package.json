@@ -1,0 +1,30 @@
+{
+  "name": "audiocars.ru",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-html-imports": "^1.0.6",
+    "gulp-include": "^2.4.1",
+    "gulp-sass": "^6.0.0",
+    "gulp-server-livereload": "^1.9.2",
+    "gulp-svg-sprite": "^2.0.3",
+    "gulp-uglify-es": "^3.0.0",
+    "import": "^0.0.6",
+    "mysql": "^2.18.1",
+    "sass": "^1.85.0"
+  },
+  "dependencies": {
+    "swiper": "^11.2.6"
+  }
+}

@@ -1,0 +1,166 @@
+// Сброс стилей
+@import './reset';
+
+// Подключение миксинов
+@import './mixin';
+
+// Основные цвета
+$mainRed: #A33419;
+$mainWhite: #f0f0f0;
+// $mainWhite: #E8E8E8;
+$mainDark: #1e1e1e;
+$gradient: linear-gradient(139deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 160%);
+$gradientSecond: linear-gradient(179deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 160%);
+
+// Основные размеры
+$maxWidth: 3000;
+$maxWidthContainer: 1640;
+$tablet: 945px;
+$tabletM: 700px;
+$mobile: 500px;
+
+// Подключение стилей SVG иконок
+@import './svg-icons';
+
+// Подключение шрифтов
+@import './fonts';
+
+// Базовые стили
+body{
+  font-family: "Cygre";
+  font-weight: 400;
+  background-color: $mainWhite;
+  color: $mainDark;
+  letter-spacing: 0.031rem;
+  line-height: 1.54;
+}
+
+.container {
+    max-width: $maxWidthContainer + px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+// Кнопка БЭМ
+.button{
+  text-transform: uppercase;
+  background-color: $mainRed;
+  color: $mainWhite;
+  border-radius: 5px;
+  padding: 12.5px 150px;
+  font-weight: 700;
+  letter-spacing: 0.031rem;
+  line-height: 1.54rem;
+  cursor: pointer;
+}
+
+// Заголовок БЭМ
+.title{
+  font-family: "Wadik";
+  color: $mainRed;
+  @include adaptive("font-size", 48, 24, 1);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+// Карточка товара БЭМ
+.product-card{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 10px;
+  background: $mainWhite;
+
+  &::before{
+    content: "";
+    position: absolute;
+    inset: -1px;
+    background: $gradient;
+    border-radius: 11px;
+    z-index: -1;
+  }
+  
+  &__image{
+    max-width: 412px;
+    margin-bottom: 15px;
+  }
+
+  &__body{
+    margin-top: auto;
+    margin-bottom: 26px;
+    text-transform: uppercase;
+  }
+
+  &__title{
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  &__quantity{
+    display: inline-flex;
+    gap: 14px;
+    margin-bottom: 16px;
+    color: #00960D;
+  }
+
+  &__price{
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__bottom{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+      svg{
+        width: 33px;
+        height: 30px;
+      }
+  }
+
+  &__btn{
+    flex-grow: 1;
+    padding: 14px 0;
+  }
+
+  @media(max-width: $tablet){
+    &__btn{
+      padding: 10px 0;
+    }
+  }
+}
+
+// Главная страница
+@import './index';
+
+// Вход и регистрация в личном кабинете
+@import './login';
+
+// Шапка 
+@import '../components/header/header';
+
+// Слайдер
+@import '../components/slider/slider';
+
+// 404
+@import './404';
+
+// Страница "Каталог"
+@import './catalog';
+
+// Страница "Избранное"
+@import './favorites';
+
+// Страница "Корзина"
+@import './basket';
+
+// Модальное окно
+@import '../components/modal/modal';
+
+// Навигация по сайту (хлебные крошки)
+@import './breadcrumb';
+
+// Подвал
+@import '../components/footer/footer';

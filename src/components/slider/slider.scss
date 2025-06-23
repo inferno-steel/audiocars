@@ -1,0 +1,73 @@
+.slider{
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 140px;
+    border-radius: 10px;
+    background: #D4D4D4;
+
+    &::before{
+        content: "";
+        position: absolute;
+        inset: -1px;
+        background: $gradient;
+        border-radius: 11px;
+        z-index: -1;
+      }
+
+    &__wrap{
+        width: 500px;
+        display: flex;
+        transition: all 1s;
+    }
+
+    &__img{
+        width: 500px;
+    }
+
+    &__btn{
+        display: flex;
+        border: 1px solid;
+        cursor: pointer;
+        position: absolute;
+        padding: 16px 13px;
+        border-radius: 3px;
+        transition: .2s ease;
+
+        &:hover{
+            background-color: $mainRed;
+            border: 1px solid $mainRed;
+
+            svg{
+                fill: $mainWhite;
+            }
+        }
+
+        &_left{
+            left: 2%;
+            top: 50%;
+            transform: translate(-2%, -50%);
+        }
+
+        &_right{
+            right: 2%;
+            top: 50%;
+            transform: translate(-2%, -50%);
+        }
+    } 
+
+    @media (max-width: $tablet) {
+        margin-bottom: 80px;
+    }
+
+    @media (max-width: $mobile) {
+        &__btn{
+            padding: 8px 5px;
+        }
+    }
+
+}
+
+.svg-arrow-slider-left_rotate{
+    transform: rotate(180deg);
+}

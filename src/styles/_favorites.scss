@@ -1,0 +1,102 @@
+.favorites{
+    margin-bottom: 140px;
+}
+
+.card-favorites{
+    position: relative;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background: linear-gradient(#000, $mainWhite 0) padding-box, linear-gradient(139deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 160%) border-box;
+
+    &__close{
+        position: absolute;
+        right: 30px;
+        cursor: pointer;
+
+        svg{
+            width: 23px;
+            height: 23px;
+        }
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title{
+        font-size: 24px;
+    }
+
+    &__quantity{
+        display: flex;
+        gap: 10px;
+        color: #00960D;
+        margin-top: auto;
+        margin-bottom: 35px;
+    }
+
+    &__price{
+        font-size: 40px;
+    }
+
+    &__button{
+        display: flex;
+        align-items: center;
+        margin-top: auto;
+        gap: 10px;
+        flex: 1 0 auto;
+
+        svg{
+            width: 29px;
+            height: 25px;
+            fill: $mainRed;
+            stroke: $mainRed;
+        }
+    }
+
+    &__btn{
+        flex: 1 1 541px;
+        padding: 12.5px 5px;
+    }
+
+    &__link{
+        flex: 1 0 auto;
+    }
+
+    @media (max-width: $tablet) {
+        flex-direction: column;
+        padding:  65px 30px 20px 30px;
+
+        &__close{
+            top: 25px;
+        }
+
+        &__title{
+            font-size: 16px;
+        }
+
+        &__price{
+            font-size: 24px;
+        }
+
+        &__quantity{
+            margin-bottom: 0;
+        }
+
+        &_button{
+            gap: 30px;
+        }
+
+        &__link{
+            order: 2;
+            flex: 0 0 auto;
+        }
+  }
+}

@@ -1,0 +1,131 @@
+.footer{
+    &__logotype{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    &__logo{
+        @include adaptive("width", 338, 163, 1);
+    }    
+}
+
+.body-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    &__list {
+        flex-direction: column;
+        row-gap: 22px;
+
+        a{
+            padding: 0;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            background-color: inherit;
+            color: #1e1e1e;
+        }
+    }
+
+    &__social{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &::before{
+            content: "";
+            display: block;
+            width: 164px;
+            height: 2px;
+            border-bottom: 1px solid #000;
+            flex-shrink: 2;
+        }
+
+        &::after{
+            content: "";
+            display: block;
+            width: 164px;
+            height: 2px;
+            border-bottom: 1px solid #000;
+            flex-shrink: 2;
+        }
+    }
+
+    &__contacts{
+        text-transform: uppercase;
+    }
+
+    @media (max-width: $tablet) {
+        flex-wrap: wrap;
+        row-gap: 15px;
+
+        &__social{
+            order: 3;
+            overflow: auto;
+            margin: 0 auto;
+        }
+    }
+}
+
+.social-footer{
+    &__wrap {
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        gap: 25px;
+        align-items: center;
+    }
+}
+
+.footer-contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 152px;
+
+    &__title{
+        font-weight: 700;
+    }
+
+    &__callback{
+        align-items: baseline;
+    }
+}
+
+.copyright{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    row-gap: 20px;
+    column-gap: 70px;
+    font-size: 14px;
+
+    &__copy{
+        p{
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        a{
+            text-decoration: underline;
+        }
+    }
+
+    &__design{
+        a{
+            color: $mainRed;
+            text-decoration: underline;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+    }
+
+    @media (max-width: $mobile) {
+        &__copy{
+            order: 2;
+        }
+    }
+}

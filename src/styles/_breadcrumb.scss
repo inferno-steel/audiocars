@@ -1,0 +1,22 @@
+.breadcrumb {
+    display: flex;
+    color: #666;
+    text-transform: uppercase;
+    gap: 5px;
+    margin-bottom: 80px;
+
+    li+li{
+        &::before{
+            color: #666;
+            content: "/\00a0";
+        }
+
+        &:last-child{
+            font-weight: 700;
+        }
+    }
+
+    @media (max-width: $tabletM) {
+        margin-bottom: 60px;
+    }
+}

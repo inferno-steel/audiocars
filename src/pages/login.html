@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в личный кабинет</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    @@include('../components/header/header.html')
+    <main>
+        <section class="account">
+            <div class="account__container container">
+                <div class="account__card card-account">
+                    <h2 class="card-account__title title">Вход</h2>
+                    <div class="card-account__login">
+                        <form action="" class="form-account">
+                            <label class="form-account__label">Имя пользователя или Номер телефона</label>
+                            <input class="form-account__input" type="text">
+                            <label class="form-account__label">Пароль</label>
+                            <input class="form-account__input" type="password">
+                            <div class="form-account__inner">
+                                <button class="form-account__btn button">Войти</button>
+                                <div class="form-account__checkbox">
+                                    <input class="form-account__check" type="checkbox">
+                                    <span>Запомнить меня</span>
+                                </div>
+                            </div>
+                            <a class="form-account__link" href="registration.html">или<span>зарегистрируйтесь</span></a>
+                            <a class="form-account__link" href="#">
+                                <p>Забыли свой пароль?</p>
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('../components/footer/footer.html')
+    @@include('../components/modal/modal.html') 
+<script src="js/main.min.js"></script>
+</body>
+</html>
