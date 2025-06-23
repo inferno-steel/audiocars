@@ -48,9 +48,11 @@ function copyFonts() {
 }
 
 // Функция очистки папки public 
-function clean() {
-    return del.sync('./public/', { force: true })
-  }
+// function clean() {
+//     return del.sync('./public/', { force: true })
+//   }
+
+
 
 // Функция запуска сервера
 function browsersync () {
@@ -82,7 +84,7 @@ function script (params) {
 }
 
 exports.filesInclude = filesInclude;
-exports.clean = clean;
+// exports.clean = clean;
 exports.styles = styles;
 exports.browsersync = browsersync;
 exports.watching = watching;
@@ -91,7 +93,7 @@ exports.copyFonts = copyFonts;
 exports.script = script;
 
 exports.default = parallel(
-  clean,
+  // clean,
   styles,
   script,
   filesInclude,
