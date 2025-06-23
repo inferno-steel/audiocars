@@ -52,6 +52,8 @@ function clean() {
     return del.sync('./public/', { force: true })
   }
 
+
+
 // Функция запуска сервера
 function browsersync () {
   browserSync.init({
