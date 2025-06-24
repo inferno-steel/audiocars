@@ -5,6 +5,10 @@
     gap: 5px;
     margin-bottom: 80px;
 
+    a{
+        display: inline-block;
+    }
+
     li+li{
         &::before{
             color: #666;

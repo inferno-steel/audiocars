@@ -3,6 +3,9 @@
 
     &__button{
         display: block;
+        text-align: center;
+        max-width: 472px;
+        padding: 12.5px 0;
         margin: 0 auto;
     }
 
@@ -19,8 +22,7 @@
 
     @media (max-width: $tabletM) {
         &__button {
-            width: 100%;
-            padding: 10px 0;
+            max-width: 100%;
         }
 
         &__summ{

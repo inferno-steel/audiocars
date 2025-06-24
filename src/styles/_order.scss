@@ -1,0 +1,19 @@
+.order{
+    &__wrap{
+        display: flex;
+    }
+}
+
+
+.form-order{
+    &__input{
+        border: 1px solid;
+        border-radius: 5px;
+        // width: 472px;
+        min-height: 45px;
+    }
+
+    &__list{
+        display: flex;
+    }
+}
