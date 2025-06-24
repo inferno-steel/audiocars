@@ -1,3 +1,20 @@
 .basket{
     margin-bottom: 140px;
 }
+
+.counter{
+    justify-content: center;
+    display: flex;
+    gap: 60px;
+    border: 1px solid #000000;
+    width: 541px;
+    min-height: 52px;
+    align-items: center;
+
+    &__btn>svg{
+        width: 16px;
+    }
+    &__content{
+        font-size: 20px;
+    }
+}
