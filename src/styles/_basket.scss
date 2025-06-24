@@ -1,15 +1,28 @@
 .basket{
     margin-bottom: 140px;
+
+    &__button{
+        display: block;
+        margin: 0 auto;
+    }
+
+    @media (max-width: $tabletM) {
+        &__button {
+            width: 100%;
+            padding: 10px 0;
+        }
+    }
 }
 
 .counter{
     justify-content: center;
     display: flex;
+    padding: 0 15px;
     gap: 60px;
     border: 1px solid #000000;
-    width: 541px;
     min-height: 52px;
     align-items: center;
+    border-radius: 5px;
 
     &__btn>svg{
         width: 16px;
