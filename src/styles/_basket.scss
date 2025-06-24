@@ -6,10 +6,26 @@
         margin: 0 auto;
     }
 
+    &__summ{
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 700;
+        display: flex;
+        max-width: 310px;
+        margin-left: auto;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
     @media (max-width: $tabletM) {
         &__button {
             width: 100%;
             padding: 10px 0;
+        }
+
+        &__summ{
+            max-width: none;
+            margin-left: none;
         }
     }
 }
