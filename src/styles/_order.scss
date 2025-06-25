@@ -1,6 +1,8 @@
 .order{
     &__wrap{
         display: flex;
+        gap: 20px;
+        justify-content: space-between;
     }
 }
 
@@ -20,6 +22,23 @@
 .product-order{
     display: flex;
     gap: 20px;
+    position: relative;
+    border-radius: 10px;
+    background: #f0f0f0;
+    padding: 30px;
+
+    &::before{
+        content: "";
+        position: absolute;
+        inset: -1px;
+        background: linear-gradient(139deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 160%);
+        border-radius: 11px;
+        z-index: -1;
+    }
+
+    &__image{
+        width: 278px;
+    }
 
     &__box{
         display: flex;
@@ -36,5 +55,10 @@
         margin-top: auto;
         justify-content: space-between;
         align-items: center;
+    }
+
+    &__counter{
+        gap: 18px;
+        padding: 0 27px;
     }
 }
