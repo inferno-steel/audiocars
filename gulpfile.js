@@ -53,7 +53,6 @@ function clean() {
   }
 
 
-
 // Функция запуска сервера
 function browsersync () {
   browserSync.init({

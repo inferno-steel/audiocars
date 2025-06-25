@@ -4,7 +4,6 @@
     }
 }
 
-
 .form-order{
     &__input{
         border: 1px solid;
@@ -15,5 +14,27 @@
 
     &__list{
         display: flex;
+    }
+}
+
+.product-order{
+    display: flex;
+    gap: 20px;
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text{
+        display: flex;
+        gap: 30px;
+    }
+
+    &__body{
+        display: flex;
+        margin-top: auto;
+        justify-content: space-between;
+        align-items: center;
     }
 }
