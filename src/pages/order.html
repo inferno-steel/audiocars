@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
     @@include('../components/header/header.html')
     <main>
@@ -20,53 +22,78 @@
                 </div>
                 <h1 class="order__title title">Оформление заказа</h1>
                 <div class="order__wrap">
-                    <form class="order__form form-order">
+                    <form class="form-order">
+                        <div class="form-order__title">Ваши данные:</div>
                         <div class="form-order__personal">
-                            <p>Ваши данные:</p>
                             <div class="form-order__box">
-                                <input class="form-order__input" type="text">
-                                <input class="form-order__input" type="text">
+                                <input class="form-order__input" type="text" placeholder="Имя">
+                                <input class="form-order__input" type="text" placeholder="Фамилия">
                             </div>
                             <div class="form-order__box">
-                                <input class="form-order__input" type="text">
-                                <input class="form-order__input" type="text">
+                                <input class="form-order__input" type="text" placeholder="+7(000) 000-00-00">
+                                <input class="form-order__input" type="text" placeholder="Email">
                             </div>
                         </div>
+                        <div class="form-order__title">Выбор доставки:</div>
                         <div class="form-order__delivery">
-                            <p>Выбор доставки</p>
-                            <div class="form-order__list">
-                                <div class="form-order__courier">
+                            <div class="form-order__box">
                                 <input type="checkbox">
                                 <label>Доставит курьер (только по Самаре)</label>
-                                <p>Адрес:</p>
-                                <div class="form-order__box">
-                                    <input class="form-order__input" type="text">
-                                </div>
-                                <div class="form-order__box">
-                                    <input class="form-order__input" type="text">
-                                </div>
-                                <div class="form-order__box">
-                                    <input class="form-order__input" type="text">
-                                    <input class="form-order__input" type="text">
-                                    <input class="form-order__input" type="text">
-                                </div>
-                                <div class="form-order__box">
-                                    <input class="form-order__input" type="text">
+                            </div>
+                            <div class="form-order__box">
+                                <input type="checkbox">
+                                <label>Забрать в пункте выдачи</label>
+                            </div>
+                        </div>
+                        <div class="form-order__section-wrap">
+                            <div class="form-order__section">
+                                <div class="form-order__adress">
+                                    <div class="form-order__title">Адрес:</div>
+                                    <input class="form-order__input" type="text" placeholder="Самара">
+                                    <input class="form-order__input" type="text" placeholder="Адрес">
+                                    <div class="form-order__wrapper">
+                                        <input class="form-order__input" type="text" placeholder="Дом">
+                                        <input class="form-order__input" type="text" placeholder="Кв">
+                                        <input class="form-order__input" type="text" placeholder="Этаж">
+                                    </div>
+                                    <input class="form-order__input" type="text" placeholder="Комментарий к заказу">
                                 </div>
                             </div>
-                            <div class="form-order__pickup">
-                                  <input type="checkbox">
-                                <label>Забрать в пункте выдачи</label>
-                                <p>Адрес:</p>
-                                <div class="form-order__box">
-                                    <input class="form-order__input" type="text">
+                            <div class="form-order__section">
+                                <div class="form-order__adress">
+                                    <div class="form-order__title">Адрес:</div>
+                                    <input class="form-order__input" type="text" placeholder="Выберите город">
+                                    <input class="form-order__input" type="text" placeholder="Адрес пункта выдачи">
                                 </div>
-                                <div class="form-order__box">
-                                    <input class="form-order__input" type="text">
-                                </div>
-                            </div> 
-                            </div>    
+                            </div>
                         </div>
+                        <div class="form-order__info">
+                            <div class="form-order__wrap">
+                                <div class="form-order__content">
+                                    <p class="form-order__text">количество товаров:</p>
+                                </div>
+                                <div class="form-order__value">
+                                    <p class="form-order__amount">(3)</p>
+                                </div>
+                            </div>
+                            <div class="form-order__wrap">
+                                <div class="form-order__content">
+                                    <p class="form-order__text">Стоимость доставки:</p>
+                                </div>
+                                <div class="form-order__value">
+                                    <p class="form-order__amount">0 ₽</p>
+                                </div>
+                            </div>
+                            <div class="form-order__wrap">
+                                <div class="form-order__content">
+                                    <p class="form-order__text">Итого:</p>
+                                </div>
+                                <div class="form-order__value">
+                                    <p class="form-order__amount">9600 ₽</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="form-order__button button">Оформить заказ</button>
                     </form>
                     <div class="order__list">
                         <div class="order__product product-order">
@@ -88,13 +115,75 @@
                                         <button class="counter__btn">
                                             <svg class="svg-minus">
                                                 <use xlink:href="img/icons/svg-sprite.svg#svg-minus"></use>
-                                            </svg> 
+                                            </svg>
                                         </button>
                                         <p class="counter__content">1</p>
                                         <button class="counter__btn">
                                             <svg class="svg-plus">
                                                 <use xlink:href="img/icons/svg-sprite.svg#svg-plus"></use>
-                                            </svg> 
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order__product product-order">
+                            <div class="product-order__image">
+                                <img class="product-order__img" src="img/test-favorites.jpg" alt="">
+                            </div>
+                            <div class="product-order__box">
+                                <div class="product-order__text">
+                                    <h2 class="product-order__title">Акустическая система MT-15NEO</h2>
+                                    <button class="product-order__close">
+                                        <svg class="svg-close">
+                                            <use xlink:href="img/icons/svg-sprite.svg#svg-close"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product-order__body">
+                                    <p class="product-order__price">3200 ₽</p>
+                                    <div class="product-order__counter counter">
+                                        <button class="counter__btn">
+                                            <svg class="svg-minus">
+                                                <use xlink:href="img/icons/svg-sprite.svg#svg-minus"></use>
+                                            </svg>
+                                        </button>
+                                        <p class="counter__content">1</p>
+                                        <button class="counter__btn">
+                                            <svg class="svg-plus">
+                                                <use xlink:href="img/icons/svg-sprite.svg#svg-plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order__product product-order">
+                            <div class="product-order__image">
+                                <img class="product-order__img" src="img/test-favorites.jpg" alt="">
+                            </div>
+                            <div class="product-order__box">
+                                <div class="product-order__text">
+                                    <h2 class="product-order__title">Акустическая система MT-15NEO</h2>
+                                    <button class="product-order__close">
+                                        <svg class="svg-close">
+                                            <use xlink:href="img/icons/svg-sprite.svg#svg-close"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product-order__body">
+                                    <p class="product-order__price">3200 ₽</p>
+                                    <div class="product-order__counter counter">
+                                        <button class="counter__btn">
+                                            <svg class="svg-minus">
+                                                <use xlink:href="img/icons/svg-sprite.svg#svg-minus"></use>
+                                            </svg>
+                                        </button>
+                                        <p class="counter__content">1</p>
+                                        <button class="counter__btn">
+                                            <svg class="svg-plus">
+                                                <use xlink:href="img/icons/svg-sprite.svg#svg-plus"></use>
+                                            </svg>
                                         </button>
                                     </div>
                                 </div>
@@ -105,8 +194,10 @@
             </div>
         </section>
     </main>
-    @@include('../components/footer/footer.html') 
-    @@include('../components/modal/modal.html') 
+
+    @@include('../components/footer/footer.html')
+    @@include('../components/modal/modal.html')
     <script src="js/main.min.js"></script>
 </body>
+
 </html>

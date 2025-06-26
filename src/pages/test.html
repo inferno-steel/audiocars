@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    @@include('../components/header/header.html')
+    <main>
+        <form class="form-order">
+            <div class="form-order__title">Ваши данные:</div>
+            <div class="form-order__personal">
+                <div class="form-order__box">
+                    <input class="form-order__input" type="text" placeholder="Имя">
+                    <input class="form-order__input" type="text" placeholder="Фамилия">
+                </div>
+                <div class="form-order__box">
+                    <input class="form-order__input" type="text" placeholder="+7(000) 000-00-00">
+                    <input class="form-order__input" type="text" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-order__title">Выбор доставки:</div>
+            <div class="form-order__section-wrap">
+                <div class="form-order__section">
+                    <div class="form-order__box">
+                        <input type="checkbox">
+                        <label>Доставит курьер (только по Самаре)</label>
+                    </div>
+                    <div class="form-order__adress">
+                        <div class="form-order__title">Адрес:</div>
+                        <input class="form-order__input" type="text" placeholder="Самара">
+                        <input class="form-order__input" type="text" placeholder="Адрес">
+                        <div class="form-order__wrapper">
+                            <input class="form-order__input" type="text" placeholder="Дом">
+                            <input class="form-order__input" type="text" placeholder="Кв">
+                            <input class="form-order__input" type="text" placeholder="Этаж">
+                        </div>
+                        <input class="form-order__input" type="text" placeholder="Комментарий к заказу">
+                    </div>
+                </div>
+                <div class="form-order__section">
+                    <div class="form-order__box">
+                        <input type="checkbox">
+                        <label>Забрать в пункте выдачи</label>
+                    </div>
+                    <div class="form-order__adress">
+                        <div class="form-order__title">Адрес:</div>
+                        <input class="form-order__input" type="text" placeholder="Выберите город">
+                        <input class="form-order__input" type="text" placeholder="Адрес пункта выдачи">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-order__info">
+                <div class="form-order__wrap">
+                    <div class="form-order__content">
+                        <p class="form-order__text">количество товаров:</p>
+                    </div>
+                    <div class="form-order__value">
+                        <p class="form-order__amount">(3)</p>
+                    </div>
+                </div>
+                <div class="form-order__wrap">
+                    <div class="form-order__content">
+                        <p class="form-order__text">Стоимость доставки:</p>
+                    </div>
+                    <div class="form-order__value">
+                        <p class="form-order__amount">0 ₽</p>
+                    </div>
+                </div>
+                <div class="form-order__wrap">
+                    <div class="form-order__content">
+                        <p class="form-order__text">Итого:</p>
+                    </div>
+                    <div class="form-order__value">
+                        <p class="form-order__amount">9600 ₽</p>
+                    </div>
+                </div>
+            </div>
+            <button class="form-order__button button">Оформить заказ</button>
+        </form>
+        <form class="form-order">
+                        <div class="form-order__title">Ваши данные:</div>
+                        <div class="form-order__section">
+                            <div class="form-order__box">
+                                <input class="form-order__input" type="text" placeholder="Имя">
+                                <input class="form-order__input" type="text" placeholder="+7(000) 000-00-00">
+                            </div>
+                            <div class="form-order__box">
+                                <input class="form-order__input" type="text" placeholder="Фамилия">
+                                <input class="form-order__input" type="text" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-order__title">Выбор доставки:</div>
+                        <div class="form-order__section">
+                            <div class="form-order__box">
+                                <input type="checkbox">
+                                <label>Доставит курьер (только по Самаре)</label>
+                            </div>
+                            <div class="form-order__box">
+                                <input type="checkbox">
+                                <label>Забрать в пункте выдачи</label>
+                            </div>
+                        </div>
+                        <div class="form-order__section">
+                            <div class="form-order__box">
+                                <div class="form-order__title">Адрес:</div>
+                                <input class="form-order__input" type="text" placeholder="Самара">
+                                <input class="form-order__input" type="text" placeholder="Адрес">
+                                <div class="form-order__wrapper">
+                                    <input class="form-order__input" type="text" placeholder="Дом">
+                                    <input class="form-order__input" type="text" placeholder="Кв">
+                                    <input class="form-order__input" type="text" placeholder="Этаж">
+                                </div>
+                                <input class="form-order__input" type="text" placeholder="Комментарий к заказу">
+                            </div>
+                            <div class="form-order__box">
+                                <div class="form-order__title">Адрес:</div>
+                                <input class="form-order__input" type="text" placeholder="Выберите город">
+                                <input class="form-order__input" type="text" placeholder="Адрес пункта выдачи">
+                            </div>
+                        </div>
+                        <div class="form-order__info">
+                            <div class="form-order__wrap">
+                                <div class="form-order__content">
+                                    <p class="form-order__text">количество товаров:</p>
+                                </div>
+                                <div class="form-order__value">
+                                    <p class="form-order__amount">(3)</p>
+                                </div>
+                            </div>
+                            <div class="form-order__wrap">
+                                <div class="form-order__content">
+                                    <p class="form-order__text">Стоимость доставки:</p>
+                                </div>
+                                <div class="form-order__value">
+                                    <p class="form-order__amount">0 ₽</p>
+                                </div>
+                            </div>
+                            <div class="form-order__wrap">
+                                <div class="form-order__content">
+                                    <p class="form-order__text">Итого:</p>
+                                </div>
+                                <div class="form-order__value">
+                                    <p class="form-order__amount">9600 ₽</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="form-order__button button">Оформить заказ</button>
+                    </form>
+    </main>
+    @@include('../components/footer/footer.html')
+    @@include('../components/modal/modal.html')
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

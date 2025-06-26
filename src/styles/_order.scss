@@ -3,19 +3,123 @@
         display: flex;
         gap: 20px;
         justify-content: space-between;
+        margin-bottom: 140px;
+    }
+
+    &__list{
+        max-width: 636px;
+    }
+
+    @media (max-width: $tablet){
+        &__wrap{
+            flex-wrap: wrap;
+        }
+
+        &__list{
+            max-width: none;
+        }
     }
 }
 
 .form-order{
+    flex: 1 1 auto;
+    text-transform: uppercase;
+
+    &__title{
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+
+    &__section{
+        flex-basis: 472px;
+    }
+
+    &__personal{
+        max-width: 944px;
+    }
+
+    &__adress{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__delivery{
+        display: flex;
+        gap: 20px;
+        align-items: anchor-center;
+    }
+
+    &__section-wrap{
+        display: flex;
+        gap: 20px;
+        align-items: baseline;
+    }
+
+    &__box-wrap{
+        display: flex;
+        gap: 5px;
+        flex: 1 1 auto;
+    }
+
+    &__box{
+        display: flex;
+        gap: 20px;
+        flex-basis: 472px;
+    }
+
+    &__wrapper{
+        display: flex;
+        gap: 20px;
+    }
+
     &__input{
-        border: 1px solid;
+        border: 1.5px solid;
         border-radius: 5px;
-        // width: 472px;
+        width: 100%;
         min-height: 45px;
+        padding-left: 30px;
+        margin-bottom: 20px;
+
+        &::placeholder{
+            text-transform: uppercase;
+        }
     }
 
     &__list{
         display: flex;
+    }
+
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+        margin-bottom: 40px;
+
+        &:nth-child(1){
+            margin-bottom: 15px;
+        }
+    }
+
+    &__wrap:last-child, &__amount{
+        font-size: 24px;
+    }
+
+    &__button{
+        width: 100%;
+    }
+
+     @media (max-width: $tablet){
+        &__personal{
+            max-width: none;
+        }
+
+        &__box{
+            display: block;
+        }
+
+        &__section-wrap{
+            display: block;
+        }
     }
 }
 
@@ -26,6 +130,8 @@
     border-radius: 10px;
     background: #f0f0f0;
     padding: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
 
     &::before{
         content: "";
@@ -48,6 +154,7 @@
     &__text{
         display: flex;
         gap: 30px;
+        align-items: baseline;
     }
 
     &__body{
@@ -57,8 +164,13 @@
         align-items: center;
     }
 
+    &__price{
+        font-size: 24px;
+    }
+
     &__counter{
         gap: 18px;
         padding: 0 27px;
+        font-size: 20px;
     }
 }
