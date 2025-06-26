@@ -12,7 +12,7 @@
 
     @media (max-width: $tablet){
         &__wrap{
-            flex-wrap: wrap;
+            display: block;
         }
 
         &__list{
