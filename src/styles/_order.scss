@@ -12,11 +12,12 @@
 
     @media (max-width: $tablet){
         &__wrap{
-            display: block;
+            flex-direction: column;
         }
 
         &__list{
             max-width: none;
+            order: 1;
         }
     }
 }
@@ -113,6 +114,8 @@
     }
 
      @media (max-width: $tablet){
+        order: 2;
+
         &__personal{
             max-width: none;
         }
