@@ -47,6 +47,10 @@
         display: flex;
         gap: 20px;
         align-items: anchor-center;
+
+        &>.form-order__box:nth-child(2){
+            display: none;
+        }
     }
 
     &__section-wrap{
@@ -119,6 +123,10 @@
 
         &__section-wrap{
             display: block;
+        }
+
+        &__button{
+            padding: 15px 0;
         }
     }
 }
