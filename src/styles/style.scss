@@ -14,7 +14,7 @@ $gradientSecond: linear-gradient(179deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 1
 
 // Основные размеры
 $maxWidth: 3000;
-$maxWidthContainer: 1640;
+$maxWidthContainer: 1660;
 $tablet: 945px;
 $tabletM: 700px;
 $mobile: 500px;
@@ -37,7 +37,7 @@ body{
 
 .container {
     max-width: $maxWidthContainer + px;
-    padding: 0 15px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
