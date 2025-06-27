@@ -143,6 +143,7 @@
     padding: 30px;
     font-weight: 700;
     margin-bottom: 20px;
+    text-transform: uppercase;
 
     &::before{
         content: "";
@@ -153,8 +154,12 @@
         z-index: -1;
     }
 
+    &__close{
+        flex: 1 0 auto;
+    }
+
     &__image{
-        max-width: 278px;
+        flex: 1 2 278px;
     }
 
     &__box{
@@ -183,5 +188,21 @@
         gap: 18px;
         padding: 0 27px;
         font-size: 20px;
+    }
+
+    @media (max-width: $tabletM) {
+        &__box{
+            flex: 1 2 auto;
+            gap: 25px;
+        }
+
+        &__text{
+            gap: 10px;
+        }
+
+        &__body{
+            flex-direction: column;
+            align-items: baseline;
+        }
     }
 }
