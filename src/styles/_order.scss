@@ -42,12 +42,16 @@
     &__adress{
         display: flex;
         flex-direction: column;
+
+        &>.form-order__box {
+            display: none;
+        }
     }
 
     &__delivery{
         display: flex;
         gap: 20px;
-        align-items: anchor-center;
+        align-items: baseline;
     }
 
     &__section-wrap{
@@ -125,6 +129,13 @@
         &__delivery{
             &>.form-order__box:nth-child(2){
                 display: none;
+            }
+        }
+
+        &__adress {
+             &>.form-order__box {
+            display: block;
+            flex-basis: 0;
             }
         }
 

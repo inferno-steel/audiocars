@@ -148,11 +148,11 @@
                         <div class="form-order__title">Выбор доставки:</div>
                         <div class="form-order__delivery">
                             <div class="form-order__box">
-                                <input type="checkbox">
+                                <input class="form-order__checkbox checkbox-custom" type="radio" name="radio-delivery">
                                 <label>Доставит курьер (только по Самаре)</label>
                             </div>
                             <div class="form-order__box">
-                                <input type="checkbox">
+                                <input class="form-order__checkbox checkbox-custom" type="radio" name="radio-delivery">
                                 <label>Забрать в пункте выдачи</label>
                             </div>
                         </div>
@@ -172,6 +172,11 @@
                             </div>
                             <div class="form-order__section">
                                 <div class="form-order__adress">
+                                    <div class="form-order__box">
+                                        <input class="form-order__checkbox checkbox-custom" type="radio"
+                                            name="radio-delivery">
+                                        <label>Забрать в пункте выдачи</label>
+                                    </div>
                                     <div class="form-order__title">Адрес:</div>
                                     <input class="form-order__input" type="text" placeholder="Выберите город">
                                     <input class="form-order__input" type="text" placeholder="Адрес пункта выдачи">
@@ -206,8 +211,9 @@
                         </div>
                         <button class="form-order__button button">Оформить заказ</button>
                         <div class="form-order__copyright">
-                             <input type="checkbox">
-                                <label>Соглашаюсь с <span>Политикой Конфиденциальности</span> и <span>Договором Оферты</span></label>
+                            <input class="form-order__radio radio-custom" type="checkbox">
+                            <label>Соглашаюсь с <span>Политикой Конфиденциальности</span> и <span>Договором
+                                    Оферты</span></label>
                         </div>
                     </form>
                     <div class="order__list">

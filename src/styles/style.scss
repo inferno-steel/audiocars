@@ -9,8 +9,8 @@ $mainRed: #A33419;
 $mainWhite: #f0f0f0;
 // $mainWhite: #E8E8E8;
 $mainDark: #1e1e1e;
-$gradient: linear-gradient(139deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 160%);
-$gradientSecond: linear-gradient(179deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 160%);
+$gradient: linear-gradient(139deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 160%);
+$gradientSecond: linear-gradient(179deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 160%);
 
 // Основные размеры
 $maxWidth: 3000;
@@ -26,7 +26,7 @@ $mobile: 500px;
 @import './fonts';
 
 // Базовые стили
-body{
+body {
   font-family: "Cygre";
   font-weight: 400;
   background-color: $mainWhite;
@@ -36,13 +36,13 @@ body{
 }
 
 .container {
-    max-width: $maxWidthContainer + px;
-    padding: 0 20px;
-    margin: 0 auto;
+  max-width: $maxWidthContainer + px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 // Кнопка БЭМ
-.button{
+.button {
   text-transform: uppercase;
   background-color: $mainRed;
   color: $mainWhite;
@@ -55,7 +55,7 @@ body{
 }
 
 // Заголовок БЭМ
-.title{
+.title {
   font-family: "Wadik";
   color: $mainRed;
   @include adaptive("font-size", 48, 24, 1);
@@ -64,7 +64,7 @@ body{
 }
 
 // Карточка товара БЭМ
-.product-card{
+.product-card {
   display: flex;
   flex-direction: column;
   padding: 20px 30px;
@@ -72,7 +72,7 @@ body{
   border-radius: 10px;
   background: $mainWhite;
 
-  &::before{
+  &::before {
     content: "";
     position: absolute;
     inset: -1px;
@@ -80,55 +80,107 @@ body{
     border-radius: 11px;
     z-index: -1;
   }
-  
-  &__image{
+
+  &__image {
     max-width: 412px;
     margin-bottom: 15px;
   }
 
-  &__body{
+  &__body {
     margin-top: auto;
     margin-bottom: 26px;
     text-transform: uppercase;
   }
 
-  &__title{
+  &__title {
     font-weight: 700;
     margin-bottom: 12px;
   }
 
-  &__quantity{
+  &__quantity {
     display: inline-flex;
     gap: 14px;
     margin-bottom: 16px;
     color: #00960D;
   }
 
-  &__price{
+  &__price {
     font-size: 24px;
     font-weight: 700;
   }
 
-  &__bottom{
+  &__bottom {
     display: flex;
     align-items: center;
     gap: 30px;
 
-      svg{
-        width: 33px;
-        height: 30px;
-      }
+    svg {
+      width: 33px;
+      height: 30px;
+    }
   }
 
-  &__btn{
+  &__btn {
     flex-grow: 1;
     padding: 14px 0;
   }
 
-  @media(max-width: $tablet){
-    &__btn{
+  @media(max-width: $tablet) {
+    &__btn {
       padding: 10px 0;
     }
+  }
+}
+
+// Кастомная радио-кнопка
+.checkbox-custom,
+.radio-custom {
+  appearance: none;
+  position: relative;
+  height: 24px;
+  background: $mainWhite;
+  border: 1.5px solid #000000;
+  transition: 500ms;
+  flex: 0 0 24px;
+  width: 24px;
+  cursor: pointer;
+
+  &:checked::after {
+    width: 18px;
+    height: 18px;
+    transition: 500ms;
+  }
+
+  &:disabled {
+    background: #ccc;
+    border-color: #ccc;
+  }
+
+  &:disabled::after {
+    filter: grayscale(100%);
+  }
+
+  &::after {
+    content: "";
+    background-color: $mainRed;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 0px;
+    height: 0px;
+    font-size: 26px;
+    transition: 500ms;
+    overflow: hidden;
+  }
+}
+
+// Кастомный чекбокс
+.radio-custom {
+  width: 24px;
+
+  &::after {
+    content: "&#10003";
+    background-color: transparent;
   }
 }
 
