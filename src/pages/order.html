@@ -37,11 +37,11 @@
                         <div class="form-order__title">Выбор доставки:</div>
                         <div class="form-order__delivery">
                             <div class="form-order__box">
-                                <input class="form-order__checkbox checkbox-custom" type="radio" name="radio-delivery">
+                                <input class="form-order__radio radio-custom" type="radio" name="radio-delivery">
                                 <label>Доставит курьер (только по Самаре)</label>
                             </div>
                             <div class="form-order__box">
-                                <input class="form-order__checkbox checkbox-custom" type="radio" name="radio-delivery">
+                                <input class="form-order__radio radio-custom" type="radio" name="radio-delivery">
                                 <label>Забрать в пункте выдачи</label>
                             </div>
                         </div>
@@ -62,7 +62,7 @@
                             <div class="form-order__section">
                                 <div class="form-order__adress">
                                     <div class="form-order__box">
-                                        <input class="form-order__checkbox checkbox-custom" type="radio"
+                                        <input class="form-order__radio radio-custom" type="radio"
                                             name="radio-delivery">
                                         <label>Забрать в пункте выдачи</label>
                                     </div>
@@ -100,7 +100,7 @@
                         </div>
                         <button class="form-order__button button">Оформить заказ</button>
                         <div class="form-order__copyright">
-                            <input class="form-order__radio radio-custom" type="checkbox">
+                            <input class="form-order__checkbox checkbox-custom" type="checkbox">
                             <label>Соглашаюсь с <span>Политикой Конфиденциальности</span> и <span>Договором
                                     Оферты</span></label>
                         </div>
@@ -203,8 +203,54 @@
                 </div>
             </div>
         </section>
+        <div class="order__modal modal-order modal modal-active">
+            <div class="modal-order__wrap modal__wrap">
+                <button class="modal-order__close modal__close">
+                    <svg class="svg-close">
+                        <use xlink:href="img/icons/svg-sprite.svg#svg-close"></use>
+                    </svg>
+                </button>
+                <div class="modal-order__title modal__title">Способ оплаты</div>
+                <form class="modal-order__form">
+                    <div class="modal-order__box">
+                        <input class="modal-order__radio radio-custom" type="radio" name="modal-order__form">
+                        <label class="modal-order__label" for="modal-order__form">
+                            наличными / картой при получении
+                        </label>
+                    </div>
+                    <div class="modal-order__box">
+                        <input class="modal-order__radio radio-custom" type="radio" name="modal-order__form">
+                        <label class="modal-order__label" for="modal-order__form">
+                            онлайн оплата
+                        </label>
+                    </div>
+                    <div class="modal-order__wrapper">
+                        <div class="modal-order__number">
+                            <label class="modal-order__text">номер карты</label>
+                            <div class="modal-order__inner">
+                                <input class="modal-order__input" type="text" placeholder="XXXX XXXX XXXX XXXX">
+                            </div>
+                        </div>
+                        <div class="modal-order__date">
+                            <label class="modal-order__text">срок действия</label>
+                            <div class="modal-order__inner">
+                                <input class="modal-order__input" type="text" placeholder="01">
+                                <span>/</span>
+                                <input class="modal-order__input" type="text" placeholder="30">
+                            </div>
+                        </div>
+                        <div class="modal-order__cvv">
+                            <label class="modal-order__text">cvc/cvv</label>
+                            <div class="modal-order__inner">
+                                <input class="modal-order__input" type="text" placeholder="***">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="modal-order__button button">Оформить заказ</button>
+                </form>
+            </div>
+        </div>
     </main>
-
     @@include('../components/footer/footer.html')
     @@include('../components/modal/modal.html')
     <script src="js/main.min.js"></script>

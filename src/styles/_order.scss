@@ -236,3 +236,59 @@
         }
     }
 }
+
+.modal-order{   
+
+    &__box{
+        margin-bottom: 20px;
+
+        &>label{
+            vertical-align: super;
+            margin-left: 15px;
+        }
+    }
+
+    &__wrapper{
+        margin-bottom: 30px;
+    }
+
+    &__number{
+        max-width: 440px;
+        margin-bottom: 10px;
+    }
+
+    &__text{
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    &__input{
+        border: 1.5px solid #000;
+        border-radius: 5px;
+        width: 100%;
+        display: block;
+        height: 45px;
+        padding-left: 20px;
+    }
+
+    &__date{
+        max-width: 172px;
+        margin-bottom: 10px;
+    }
+
+    &__inner{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    &__cvv{
+        max-width: 72px;
+    }
+
+    &__button{
+        width: 100%;
+        padding: 12px 0;
+    }
+
+}
