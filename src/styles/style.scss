@@ -164,8 +164,9 @@ body {
     content: "";
     background-color: $mainRed;
     position: absolute;
-    top: 2px;
-    left: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 0px;
     height: 0px;
     font-size: 26px;

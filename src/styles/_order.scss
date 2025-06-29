@@ -1,45 +1,45 @@
-.order{
-    &__wrap{
+.order {
+    &__wrap {
         display: flex;
         gap: 20px;
         justify-content: space-between;
         margin-bottom: 140px;
     }
 
-    &__list{
+    &__list {
         flex: 1 1.4 636px;
     }
 
-    @media (max-width: $tablet){
-        &__wrap{
+    @media (max-width: $tablet) {
+        &__wrap {
             flex-direction: column;
         }
 
-        &__list{
+        &__list {
             max-width: none;
             order: 1;
         }
     }
 }
 
-.form-order{
+.form-order {
     flex: 1 1 auto;
     text-transform: uppercase;
 
-    &__title{
+    &__title {
         margin-bottom: 30px;
         font-weight: 700;
     }
 
-    &__section{
+    &__section {
         flex-basis: 472px;
     }
 
-    &__personal{
+    &__personal {
         max-width: 963px;
     }
 
-    &__adress{
+    &__adress {
         display: flex;
         flex-direction: column;
 
@@ -48,36 +48,36 @@
         }
     }
 
-    &__delivery{
+    &__delivery {
         display: flex;
         gap: 20px;
         align-items: baseline;
     }
 
-    &__section-wrap{
+    &__section-wrap {
         display: flex;
         gap: 20px;
         align-items: baseline;
     }
 
-    &__box-wrap{
+    &__box-wrap {
         display: flex;
         gap: 5px;
         flex: 1 1 auto;
     }
 
-    &__box{
+    &__box {
         display: flex;
         gap: 20px;
         flex-basis: 472px;
     }
 
-    &__wrapper{
+    &__wrapper {
         display: flex;
         gap: 20px;
     }
 
-    &__input{
+    &__input {
         border: 1.5px solid;
         border-radius: 5px;
         width: 100%;
@@ -85,71 +85,72 @@
         padding-left: 15px;
         margin-bottom: 20px;
 
-        &::placeholder{
+        &::placeholder {
             text-transform: uppercase;
         }
     }
 
-    &__list{
+    &__list {
         display: flex;
     }
 
-    &__wrap{
+    &__wrap {
         display: flex;
         justify-content: space-between;
         font-weight: 700;
         margin-bottom: 40px;
         align-items: center;
 
-        &:nth-child(1){
+        &:nth-child(1) {
             margin-bottom: 15px;
         }
     }
 
-    &__wrap:last-child, &__amount{
+    &__wrap:last-child,
+    &__amount {
         font-size: 24px;
     }
 
-    &__button{
+    &__button {
         width: 100%;
         margin-bottom: 20px;
     }
 
-     @media (max-width: $tablet){
+    @media (max-width: $tablet) {
         order: 2;
 
-        &__personal{
+        &__personal {
             max-width: none;
         }
 
-        &__box{
+        &__box {
             display: block;
         }
-        
-        &__delivery{
-            &>.form-order__box:nth-child(2){
+
+        &__delivery {
+            &>.form-order__box:nth-child(2) {
                 display: none;
             }
         }
 
         &__adress {
-             &>.form-order__box {
-            display: block;
-            flex-basis: 0;
+            &>.form-order__box {
+                display: block;
+                flex-basis: 0;
             }
         }
 
-        &__section-wrap{
+        &__section-wrap {
             display: block;
         }
 
-        &__button{
+        &__button {
             padding: 15px 0;
         }
     }
 }
 
-.product-order{
+.product-order {
     display: flex;
     gap: 20px;
     position: relative;
@@ -160,7 +161,7 @@
     margin-bottom: 20px;
     text-transform: uppercase;
 
-    &::before{
+    &::before {
         content: "";
         position: absolute;
         inset: -1px;
@@ -169,26 +170,26 @@
         z-index: -1;
     }
 
-    &__close{
+    &__close {
         flex: 1 0 auto;
     }
 
-    &__image{
+    &__image {
         flex: 1 1.3 278px;
     }
 
-    &__box{
+    &__box {
         display: flex;
         flex-direction: column;
     }
 
-    &__text{
+    &__text {
         display: flex;
         gap: 30px;
         align-items: baseline;
     }
 
-    &__body{
+    &__body {
         display: flex;
         margin-top: auto;
         justify-content: space-between;
@@ -196,27 +197,27 @@
         flex-wrap: wrap;
     }
 
-    &__price{
+    &__price {
         font-size: 24px;
     }
 
-    &__counter{
+    &__counter {
         gap: 18px;
         padding: 0 27px;
         font-size: 20px;
     }
 
     @media (max-width: $tabletM) {
-        &__box{
+        &__box {
             flex: 1 2 auto;
             gap: 25px;
         }
 
-        &__text{
+        &__text {
             gap: 10px;
         }
 
-        &__body{
+        &__body {
             flex-direction: column;
             align-items: baseline;
         }
