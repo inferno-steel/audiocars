@@ -177,7 +177,7 @@ body {
 
 // Кастомный чекбокс
 .radio-custom {
-  width: 24px;
+  border-radius: 5px;
 
   &::after {
     content: "&#10003";

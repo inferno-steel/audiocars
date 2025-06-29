@@ -45,6 +45,11 @@
     &__btn>svg{
         width: 16px;
     }
+
+     &__btn>svg:first-child{
+        vertical-align: middle;
+    }
+
     &__content{
         font-size: 20px;
     }
