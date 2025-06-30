@@ -314,7 +314,7 @@
                 </div>
             </div>
         </section>
-        <div class="order__modal modal-order modal modal-active">
+        <div class="order__modal modal-order modal">
             <div class="modal-order__wrap modal__wrap">
                 <button class="modal-order__close modal__close">
                     <svg class="svg-close">
@@ -359,6 +359,20 @@
                     </div>
                     <button class="modal-order__button button">Оформить заказ</button>
                 </form>
+            </div>
+        </div>
+        <div class="modal-completed modal">
+            <div class="modal-completed__wrap modal__wrap">
+                <button class="modal-completed__close modal__close">
+                    <svg class="svg-close">
+                        <use xlink:href="img/icons/svg-sprite.svg#svg-close"></use>
+                    </svg>
+                </button>
+                <div class="modal-completed__title modal__title">Спасибо за заказ</div>
+                <p class="modal-completed__text modal__text">
+                    отслеживать статус заказа можно в личном кабинете
+                </p>
+                <button class="modal-completed__btn modal__btn">За покупками</button>
             </div>
         </div>
     </main>
@@ -432,43 +446,43 @@
         </div>
     </div>
 </footer>
-    <div class="modal">
-    <div class="modal__wrap">
-        <a class="modal__close" href="#">
+    <div class="modal-call modal">
+    <div class="modal-call__wrap modal__wrap">
+        <button class="modal-call__close modal__close">
             <svg class="svg-close">
                 <use xlink:href="img/icons/svg-sprite.svg#svg-close"></use>
             </svg>
-        </a>
-        <div class="modal__content">
-            <h3 class="modal__title">Заказать обратный звонок</h3>
-            <p class="modal__text">
+        </button>
+        <div class="modal-call__content modal__content">
+            <h3 class="modal-call__title modal__title">Заказать обратный звонок</h3>
+            <p class="modal-call__text modal__text">
                 Оставьте свои контакты и наш менеджер свяжется с Вами в ближайшее время.
             </p>
         </div>
-        <div class="modal__form">
-            <input class="modal__input" type="text" placeholder="Введите имя">
-            <input class="modal__input" type="text" placeholder="Номер">
-            <button class="modal__btn">Отправить</button>
+        <div class="modal-call__form">
+            <input class="modal-call__input" type="text" placeholder="Введите имя">
+            <input class="modal-call__input" type="text" placeholder="Номер">
+            <button class="modal-call__btn modal__btn">Отправить</button>
         </div>
-        <p class="modal__copyright">Нажимая на кнопку «Отправить»,
+        <p class="modal-call__copyright">Нажимая на кнопку «Отправить»,
             Вы даете согласие на обработку персональных данных в соответствии 
             с <a href="#">Политикой конфиденциальности</a>
         </p>
     </div>
 </div>
-<div class="modal modal-success">
-    <div class="modal__wrap">
-        <a class="modal__close" href="#">
+<div class="modal-success modal">
+    <div class="modal-success_wrap modal__wrap">
+        <button class="modal-success_close modal__close">
             <svg class="svg-close">
                 <use xlink:href="img/icons/svg-sprite.svg#svg-close"></use>
             </svg>
-        </a>
-        <div class="modal__content">
-            <h3 class="modal__title">Ваша заявка отправлена!</h3>
-            <p class="modal__text">
+        </button>
+        <div class="modal-success__content modal__content">
+            <h3 class="modal-success__title modal__title">Ваша заявка отправлена!</h3>
+            <p class="modal-success__text modal__text">
                 Менеджер свяжется с Вами в ближайшее время.
             </p>
-            <button class="modal__btn">За покупками</button>
+            <button class="modal-success__btn modal__btn">За покупками</button>
         </div>
     </div>
 </div>

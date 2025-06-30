@@ -16,7 +16,7 @@
     text-transform: uppercase;
     padding: 15px;
 
-    &__wrap{
+    &__wrap {
         background-color: $mainWhite;
         padding: 50px 52px;
         border-radius: 10px;
@@ -26,13 +26,13 @@
         max-width: 676px;
     }
 
-    &__close{
+    &__close {
         position: absolute;
         right: 15px;
         top: 15px;
     }
 
-    &__title{
+    &__title {
         font-size: 36px;
         font-weight: 700;
         margin-bottom: 10px;
@@ -40,36 +40,12 @@
         text-align: center;
     }
 
-    &__text{
+    &__text {
         color: #666;
         margin-bottom: 30px;
     }
 
-    &__form{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 40px;
-    }
-
-    &__input{
-        border: 1.5px solid;
-        border-radius: 5px;
-        padding: 13px 30px;
-
-        &::placeholder{
-            text-transform: uppercase;
-        }
-    }
-
-    &__input:nth-child(1){
-        margin-bottom: 30px;
-    }
-
-    &__input:nth-child(2){
-        margin-bottom: 40px;
-    }
-
-    &__btn{
+    &__btn {
         background-color: $mainRed;
         padding: 17px;
         border-radius: 5px;
@@ -78,30 +54,56 @@
         font-weight: 700;
         width: 100%;
     }
-    
-    &__copyright{
-        text-transform: none;
-        font-size: 14px;
 
-        a{
-            text-decoration: underline;
-            display: inline-flex;
-        }
-    }
-
-    @media (max-width: $tablet){
-        &__wrap{
+    @media (max-width: $tablet) {
+        &__wrap {
             padding: 40px 30px;
         }
 
-        &__title{
+        &__title {
             font-size: 32px;
         }
     }
 }
 
-.modal-success{
-    p{
+.modal-call {
+    &__form {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    &__input {
+        border: 1.5px solid;
+        border-radius: 5px;
+        padding: 13px 30px;
+
+        &::placeholder {
+            text-transform: uppercase;
+        }
+    }
+
+    &__input:nth-child(1) {
+        margin-bottom: 30px;
+    }
+
+    &__input:nth-child(2) {
+        margin-bottom: 40px;
+    }
+
+    &__copyright {
+        text-transform: none;
+        font-size: 14px;
+
+        a {
+            text-decoration: underline;
+            display: inline-flex;
+        }
+    }
+}
+
+.modal-success {
+    p {
         font-size: 24px;
         font-weight: 700;
         color: $mainDark;
@@ -109,7 +111,7 @@
     }
 
     @media (max-width:$tablet) {
-        p{
+        p {
             font-size: 16px;
         }
     }

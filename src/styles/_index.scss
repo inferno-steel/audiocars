@@ -1,192 +1,200 @@
 // Секция main
-.main{
-    position: relative;
-    overflow: hidden;
-  
-    &__container{
-      text-align: center;
+.main {
+  position: relative;
+  overflow: hidden;
+
+  &__container {
+    text-align: center;
+  }
+
+  &__blend-left {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+  }
+
+  &__blend-right {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+  }
+
+  &__wrap {
+    text-align: end;
+    max-width: 968px;
+    margin-bottom: 150px;
+  }
+
+  &__logo {
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-family: "Wadik";
+    font-weight: 700;
+    @include adaptive("font-size", 54, 21, 1);
+    margin-bottom: 25px;
+    line-height: 64px;
+
+    span {
+      display: none;
     }
-  
-    &__blend-left{
-      position: absolute;
-      z-index: -1;
-      left: 0;
-      top: 0;
+  }
+
+  &__inner {
+    max-width: 485px;
+    margin-left: auto;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    max-width: 490px;
+    margin-left: auto;
+    margin-bottom: 40px;
+  }
+
+  &__buttons {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 55px;
+    width: 100%;
+  }
+
+  &__btn {
+    border: 1px solid $mainRed;
+    transition: .2s ease;
+    display: inline-block;
+    text-align: center;
+
+    &:hover {
+      background-color: $mainWhite;
+      color: $mainRed;
+      border: 1px solid $mainRed;
     }
-  
-    &__blend-right{
-      position: absolute;
-      z-index: -1;
-      right: 0;
-      top: 0;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 39px 78px;
+    border: 1px solid;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: .2s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $mainRed;
+      border: 1px solid $mainRed;
+
+      svg {
+        fill: $mainWhite;
+      }
     }
-  
-    &__wrap{
-      text-align: end;
-      max-width: 968px;
-      margin-bottom: 150px;
+
+  }
+
+  @media (max-width: $tablet) {
+    &__blend-left {
+      width: 52%;
     }
-  
-    &__logo{
-      margin-bottom: 10px;
+
+    &__wrap {
+      text-align: left;
     }
-  
-    &__title{
-      font-family: "Wadik";
-      font-weight: 700;
-      @include adaptive("font-size", 54,21, 1);
-      margin-bottom: 25px;
-      line-height: 64px;
-  
-        span{
-          display: none;
-        }
+
+    &__link {
+      padding: 25px 53px;
     }
-  
-    &__text{
-      text-transform: uppercase;
-      max-width: 490px;
-      margin-left: auto;
+
+    &__logo {
+      margin-bottom: 14px;
+    }
+
+    &__title {
+      line-height: 29px;
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      margin-left: 0;
+    }
+
+    &__text {
       margin-bottom: 40px;
     }
-  
-    &__buttons{
-      display: inline-flex;
-      flex-direction: column;
-      gap: 55px;
-    }
-  
-    &__btn{
-      border: 1px solid $mainRed;
-      transition: .2s ease;
-  
-      &:hover{
-        background-color: $mainWhite;
-        color: $mainRed;
-        border: 1px solid $mainRed;
-      }
-    }
-  
-    &__link{
-      display: inline-block;
-      padding: 39px 78px;
-      border: 1px solid;
-      border-radius: 50%;
-      margin: 0 auto;
-      transition: .2s ease;
-      cursor: pointer;
-  
-        &:hover{
-          background-color: $mainRed;
-          border: 1px solid $mainRed;
-  
-          svg{
-            fill: $mainWhite;
-          }
-        }
-  
-    }
-  
-    @media (max-width: $tablet) {
-      &__blend-left{
-        width: 52%;
-      }
-  
-      &__wrap{
-        text-align: left;
-      }
-  
-      &__link{
-        padding: 25px 53px;
-      }
-  
-      &__logo{
-        margin-bottom: 14px;
-      }
-  
-      &__title{
-        line-height: 29px;
-        margin-bottom: 20px;
-      }
-  
-      &__text{
-        margin-left: 0;
-      }
-  
-      &__text{
-        margin-bottom: 40px;
-      }
-  
-      &__btn{
-        padding: 13px 140px;
-      }
-    }
-  
-    @media (max-width: $mobile) {
-      &__blend-left{
-        top: 576px;
-      }
-  
-      &__wrap{
-        margin-bottom: 275px;
-      }
-      
-      &__blend-right{
-        top: 658px;
-      }
-      
-      &__btn{
-        padding: 13px 0;
-        justify-content: center;
-      }
-  
-      &__buttons{
-        display: flex;
-        gap: 70px;
-      }
+
+    &__btn {
+      padding: 13px 140px;
     }
   }
+
+  @media (max-width: $mobile) {
+    &__blend-left {
+      top: 576px;
+    }
+
+    &__wrap {
+      margin-bottom: 275px;
+    }
+
+    &__blend-right {
+      top: 658px;
+    }
+
+    &__btn {
+      padding: 13px 0;
+      justify-content: center;
+    }
+
+    &__buttons {
+      display: flex;
+      gap: 70px;
+    }
+  }
+}
 
 //Секция "Часто покупают"
-.popular-goods{
-    margin-bottom: 140px;
-  
-    &__title{
-      margin-bottom: 57px;
+.popular-goods {
+  margin-bottom: 140px;
+
+  &__title {
+    margin-bottom: 57px;
+  }
+
+  &__catalog {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: minmax(270px, 472px) minmax(270px, 472px) minmax(270px, 636px);
+  }
+
+  @media (max-width: $tablet) {
+    margin-bottom: 80px;
+
+    &__title {
+      margin-bottom: 40px;
     }
-    
-    &__catalog{
-      display: grid;
-      gap: 20px;
-      grid-template-columns: minmax(270px, 472px) minmax(270px, 472px) minmax(270px, 636px);
-    }
-  
-    @media (max-width: $tablet) {
-      margin-bottom: 80px;
-      
-      &__title{
-        margin-bottom: 40px;
-      }
-  
-      &__catalog{
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-  
-    @media (max-width: $mobile){
-      &__catalog{
-        grid-template-columns: 1fr;
-      }
+
+    &__catalog {
+      grid-template-columns: 1fr 1fr;
     }
   }
 
+  @media (max-width: $mobile) {
+    &__catalog {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
 // Секция "Соторудничество"
-.partner{
+.partner {
   font-size: 50px;
   text-transform: uppercase;
   margin-bottom: 140px;
 
-  &__wrap{
+  &__wrap {
     display: flex;
     row-gap: 25px;
     column-gap: 5px;
