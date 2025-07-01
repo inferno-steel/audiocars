@@ -52,6 +52,7 @@ body {
   letter-spacing: 0.031rem;
   line-height: 1.54rem;
   cursor: pointer;
+  width: 100%;
 }
 
 // Заголовок БЭМ
@@ -211,6 +212,9 @@ body {
 
 // Страница "Оформление заказа"
 @import './order';
+
+// Страница профиль"
+@import './profile';
 
 // Модальное окно
 @import '../components/modal/modal';

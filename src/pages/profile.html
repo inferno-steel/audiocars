@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    @@include('../components/header/header.html')
+    <main>
+        <section class="profile">
+            <div class="profile__container container">
+                <div class="profile__breadcrumb">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Главная</a></li>
+                        <li>Личный кабинет</li>
+                    </ul>
+                </div>
+                <h3 class="profile__title title">Профиль</h3>
+                <div class="profile__wrap">
+                    <div class="profile__nav profile-nav">
+                        <ul class="profile-nav__list">
+                            <li class="profile-nav__item">Профиль</li>
+                            <li class="profile-nav__item">
+                                <a class="profile-nav__link">
+                                    Заказы
+                                </a>
+                            </li>
+                            <li class="profile-nav__item">
+                                <a class="profile-nav__link">
+                                    История заказов
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="profile__content">
+                        <div class="profile__date personal-date">
+                            <div class="personal-date__title">Личные данные</div>
+                            <form class="personal-date__form">
+                                <div class="personal-date__box">
+                                    <label class="personal-date__desc">Имя</label>
+                                    <input class="personal-date__input" type="text" placeholder="Информация">
+                                </div>
+                                <div class="personal-date__box">
+                                    <label class="personal-date__desc">Номер телефона</label>
+                                    <input class="personal-date__input" type="text" placeholder="Информация">
+                                </div>
+                                <div class="personal-date__box">
+                                    <label class="personal-date__desc">Email</label>
+                                    <input class="personal-date__input" type="text" placeholder="Информация">
+                                </div>
+                                <button class="personal-date__btn button">Сохранить</button>
+                            </form>
+                        </div>
+                        <div class="profile__adress profile-adress">
+                            <div class="profile-adress__wrap">
+                                <div class="profile-adress__option">Выбрать город</div>
+                                <svg class="svg-hide">
+                                    <use xlink:href="img/icons/svg-sprite.svg#svg-hide">
+                                        <use>
+                                </svg>
+                                <div class="profile-adress__city">Самара</div>
+                            </div>
+                            <div class="profile-adress__text">
+                                Доступна доставка курьером и в ПВЗ.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('../components/footer/footer.html')
+    @@include('../components/modal/modal.html')
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
