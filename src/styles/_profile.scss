@@ -22,8 +22,13 @@
     }
 
     @media(max-width: $tablet) {
+        &__title {
+            display: none;
+        }
+
         &__wrap {
             flex-direction: column;
+            margin-bottom: 80px;
         }
 
         &__nav {
@@ -38,8 +43,11 @@
         }
 
         &__exit {
+            position: initial;
             order: 2;
-            top: 0;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
         }
 
         &__adress {
@@ -152,5 +160,11 @@
     &__icon {
         position: absolute;
         left: -35px;
+    }
+
+    @media(max-width: $tablet) {
+        &__icon {
+            position: initial;
+        }
     }
 }
