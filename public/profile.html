@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+    <div class="header__container container">
+        <div class="header__top header-top">
+            <div class="header-top__burger-menu burger-menu">
+                <button class="burger-menu__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>      
+            <div class="header-top__order order-top">
+                <div class="order-top__callback callback">
+                    <a class="callback__phone" href="tel:+79272607630">+7 (927) 260-76-30</a>
+                    <a class="callback__link" href="#">Заказать звонок</a>
+                </div>
+                <div class="order-top__icon">
+                    <a class="order-top__link" href="#">
+                        <svg class="svg-phone">
+                            <use xlink:href="img/icons/svg-sprite.svg#svg-phone"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="header-top__logotype">
+                <a href="index.html">
+                    <img class="header-top__logo logo" src="img/logotype.png" alt="logotype">
+                </a>    
+            </div>
+            <div class="header-top__search">
+                <form class="search-form" action="#">
+                    <button class="search-form__btn" type="submit">
+                        <svg class="svg-search">
+                            <use xlink:href="img/icons/svg-sprite.svg#svg-search"></use>
+                        </svg>
+                    </button>
+                    <div class="search-form__inner">
+                        <input class="search-form__input" type="text" placeholder="Поиск">
+                    </div>
+                </form>
+            </div>
+            <div class="header-top__links actions-links">
+                <a class="actions-links__link" href="favorites.html">
+                    <svg class="svg-favorite">
+                        <use xlink:href="img/icons/svg-sprite.svg#svg-favorite"></use>
+                    </svg> 
+                </a>
+                <a class="actions-links__link" href="basket.html">
+                    <svg class="svg-basket">
+                        <use xlink:href="img/icons/svg-sprite.svg#svg-basket"></use>
+                    </svg>
+                    <span>0</span>
+                </a>
+                <a class="actions-links__link" href="login.html">
+                    <svg class="svg-users">
+                        <use xlink:href="img/icons/svg-sprite.svg#svg-users"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="header__bottom header-bottom">
+            <div class="header-bottom__wrap">
+                <div class="header-bottom__icons">
+                    <a class="header-bottom__link" href="login.html">
+                        <svg class="svg-users">
+                            <use xlink:href="img/icons/svg-sprite.svg#svg-users"></use>
+                        </svg>
+                        Личный кабинет
+                    </a>
+                    <a class="header-bottom__link" href="basket.html">
+                        <svg class="svg-basket">
+                            <use xlink:href="img/icons/svg-sprite.svg#svg-basket"></use>
+                        </svg>
+                        Корзина
+                        <span>0</span>
+                    </a>
+                    <a class="header-bottom__link" href="favorites.html">
+                        <svg class="svg-favorite">
+                            <use xlink:href="img/icons/svg-sprite.svg#svg-favorite"></use>
+                        </svg> 
+                        Избранное
+                    </a>
+                </div>
+                <nav class="header-bottom__menu menu">
+                    <ul class="header-bottom__list menu__list" >
+                        <li class="menu__item">
+                            <a class="menu__link" href="catalog.html" data-link="catalog">Каталог</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="test.html" data-link="services">Услуги</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#" data-link="stock">Акции</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#" data-link="delivery">Доставка</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#" data-link="contacts">Контакты</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#" data-link="cooperation">Сотрудничество</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#" data-link="about">О нас</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </div>
+    </div>
+</header>
+    <main>
+        <section class="profile">
+            <div class="profile__container container">
+                <div class="profile__breadcrumb">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Главная</a></li>
+                        <li>Личный кабинет</li>
+                    </ul>
+                </div>
+                <h3 class="profile__title title">Профиль</h3>
+                <div class="profile__wrap">
+                    <div class="profile__nav profile-nav">
+                        <ul class="profile-nav__list">
+                            <li class="profile-nav__item">Профиль</li>
+                            <li class="profile-nav__item">
+                                <a class="profile-nav__link">
+                                    Заказы
+                                </a>
+                            </li>
+                            <li class="profile-nav__item">
+                                <a class="profile-nav__link">
+                                    История заказов
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="profile__content">
+                        <div class="profile__date personal-date">
+                            <div class="personal-date__title">Личные данные</div>
+                            <form class="personal-date__form">
+                                <div class="personal-date__box">
+                                    <label class="personal-date__desc">Имя</label>
+                                    <input class="personal-date__input" type="text" placeholder="Информация">
+                                </div>
+                                <div class="personal-date__box">
+                                    <label class="personal-date__desc">Номер телефона</label>
+                                    <input class="personal-date__input" type="text" placeholder="Информация">
+                                </div>
+                                <div class="personal-date__box">
+                                    <label class="personal-date__desc">Email</label>
+                                    <input class="personal-date__input" type="text" placeholder="Информация">
+                                </div>
+                                <button class="personal-date__btn button">Сохранить</button>
+                            </form>
+                        </div>
+                        <div class="profile__adress profile-adress">
+                            <div class="profile-adress__content">
+                                <div class="profile-adress__desc">Выбрать город</div>
+                                <div class="profile-adress__icon">
+                                    <svg class="svg-hide">
+                                        <use xlink:href="img/icons/svg-sprite.svg#svg-hide">
+                                            <use>
+                                    </svg>
+                                </div>
+                                <div class="profile-adress__option option-adress">
+                                    <div class="option-adress__selected">Самара</div>
+                                    <ul class="option-adress__list">
+                                        <li class="option-adress__item">Санкт-Петербург</li>
+                                        <li class="option-adress__item">Москва</li>
+                                        <li class="option-adress__item">Екатеринбург</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="profile-adress__text">
+                                Доступна доставка курьером и в ПВЗ.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile__exit exit-profile">
+                        <div class="exit-profile__icon">
+                            <svg class="svg-exit">
+                                <use xlink:href="img/icons/svg-sprite.svg#svg-exit">
+                                <use>
+                            </svg>
+                        </div>
+                        <div class="exit-profile__text">
+                            Выйти из личного кабинета
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__logotype">
+            <img class="footer__logo" src="img/logotype.png" alt="logotype">
+        </div>
+        <div class="footer__body body-footer">
+            <nav class="body-footer menu">
+                <ul class="body-footer__list menu__list" >
+                    <li class="menu__item">
+                        <a class="menu__link" href="catalog.html" data-link="catalog">Каталог</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#" data-link="services">Услуги</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#" data-link="stock">Акции</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#" data-link="delivery">Доставка</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#" data-link="cooperation">Сотрудничество</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#" data-link="about">О нас</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="body-footer__social social-footer">
+                <div class="social-footer__wrap">
+                    <a class="social-footer__link" href="https://vk.com/id28523381">
+                        <svg class="svg-vk">
+                            <use xlink:href="img/icons/svg-sprite.svg#svg-vk"></use>
+                        </svg> 
+                    </a>
+                    <a class="social-footer__link" href="https://wa.me/+79871560763">
+                        <svg class="svg-wa">
+                            <use xlink:href="img/icons/svg-sprite.svg#svg-wa"></use>
+                        </svg> 
+                    </a>
+                    <a class="social-footer__link" href="https://t.me/inferno_steel">
+                        <svg class="svg-tg">
+                            <use xlink:href="img/icons/svg-sprite.svg#svg-tg"></use>
+                        </svg> 
+                    </a>
+                </div>
+              
+            </div>
+            <div class="body-footer__contacts footer-contacts">
+                <h6 class="footer-contacts__title">Контакты</h6>
+                <div class="footer-contacts__callback callback">
+                    <a class="callback__phone" href="tel:+79272607630">+7 (927) 260-76-30</a>
+                    <a class="callback__link" href="#">Заказать звонок</a>
+                </div>
+                <a class="foooter-contacts__email" href="mailto:inferno-steel@mail.ru">inferno-steel@mail.ru</a>
+                <p class="footer-contacts__adress">г. Самара, ул. Александра Матросова 153, к. 1</p>
+            </div>
+        </div>
+        <div class="footer__copyright copyright">
+            <div class="copyright__copy">
+                <p class="copyright__content">Ⓒ 2025 Все права защищены</p>
+                <a class="copyright__document" href="#">Политика конфиденциальности</a>
+            </div>
+            <div class="copyright__design">
+                <p class="copyright__text">Дизайн сайта</p>
+                <a class="copyright__link" href="https://t.me/pnyashka">@pnyashka</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <div class="modal-call modal">
+    <div class="modal-call__wrap modal__wrap">
+        <button class="modal-call__close modal__close">
+            <svg class="svg-close">
+                <use xlink:href="img/icons/svg-sprite.svg#svg-close"></use>
+            </svg>
+        </button>
+        <div class="modal-call__content modal__content">
+            <h3 class="modal-call__title modal__title">Заказать обратный звонок</h3>
+            <p class="modal-call__text modal__text">
+                Оставьте свои контакты и наш менеджер свяжется с Вами в ближайшее время.
+            </p>
+        </div>
+        <div class="modal-call__form">
+            <input class="modal-call__input" type="text" placeholder="Введите имя">
+            <input class="modal-call__input" type="text" placeholder="Номер">
+            <button class="modal-call__btn modal__btn">Отправить</button>
+        </div>
+        <p class="modal-call__copyright">Нажимая на кнопку «Отправить»,
+            Вы даете согласие на обработку персональных данных в соответствии 
+            с <a href="#">Политикой конфиденциальности</a>
+        </p>
+    </div>
+</div>
+<div class="modal-success modal">
+    <div class="modal-success_wrap modal__wrap">
+        <button class="modal-success_close modal__close">
+            <svg class="svg-close">
+                <use xlink:href="img/icons/svg-sprite.svg#svg-close"></use>
+            </svg>
+        </button>
+        <div class="modal-success__content modal__content">
+            <h3 class="modal-success__title modal__title">Ваша заявка отправлена!</h3>
+            <p class="modal-success__text modal__text">
+                Менеджер свяжется с Вами в ближайшее время.
+            </p>
+            <button class="modal-success__btn modal__btn">За покупками</button>
+        </div>
+    </div>
+</div>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
