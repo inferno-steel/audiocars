@@ -66,9 +66,10 @@
 
     &__list {
         text-align: center;
+        font-weight: 700;
     }
 
-    &__item:first-child {
+    &__item_selected {
         background-color: $mainRed;
         color: $mainWhite;
         border-radius: 5px;

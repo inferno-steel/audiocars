@@ -1,0 +1,72 @@
+.orders {
+    text-transform: uppercase;
+
+    &__wrap {
+        display: flex;
+    }
+}
+
+.orders-card {
+
+    position: relative;
+    border-radius: 10px;
+    background: $mainWhite;
+    padding: 30px;
+    flex-basis: 1000px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: -1px;
+        background: $gradient;
+        border-radius: 11px;
+        z-index: -1;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        border-bottom: 1px solid;
+        margin-bottom: 20px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+.card-box {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    &__image {
+        width: 188px;
+    }
+
+    &__body {
+        margin-right: auto;
+        padding: 12.5px 0px;
+    }
+
+    &__counter {
+        align-content: center;
+    }
+}
+
+.card-desc {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+}

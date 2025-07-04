@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История заказов</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    @@include('../components/header/header.html')
+    <main>
+        <section class="order-history">
+            <div class="order-history__container container">
+                <div class="order-history__breadcrumb">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Главная</a></li>
+                        <li>Личный кабинет</li>
+                    </ul>
+                </div>
+                <div class="order-history__wrap">
+                    <div class="order-history__nav profile-nav">
+                        <ul class="profile-nav__list">
+                            <li class="profile-nav__item">
+                                 <a class="profile-nav__link" href="profile.html">
+                                    Профиль
+                                </a>
+                            </li>
+                            <li class="profile-nav__item">
+                                <a class="profile-nav__link" href="orders.html">
+                                    Заказы
+                                </a>
+                            </li>
+                            <li class="profile-nav__item profile-nav__item_selected">
+                                    История заказов
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('../components/footer/footer.html')
+    @@include('../components/modal/modal.html')
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
