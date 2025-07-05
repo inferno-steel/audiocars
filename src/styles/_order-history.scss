@@ -1,0 +1,35 @@
+.order-history {
+
+    text-transform: uppercase;
+
+    &__wrap {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__list{
+        flex-basis: 1000px;
+    }
+
+    &__subtitle{
+        display: none;
+    }
+
+    @media (max-width: $tablet) {
+        &__wrap{
+            flex-direction: column;
+        }
+
+        &__list{
+            flex-basis: 0;
+        }
+
+        &__title{
+            display: none;
+        }
+
+        &__subtitle{
+            display: block;
+        }
+    }
+}
