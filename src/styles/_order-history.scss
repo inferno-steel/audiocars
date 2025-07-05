@@ -18,6 +18,7 @@
     @media (max-width: $tablet) {
         &__wrap{
             flex-direction: column;
+            gap: 0;
         }
 
         &__list{
@@ -30,6 +31,7 @@
 
         &__subtitle{
             display: block;
+            text-align: left;
         }
     }
 }
