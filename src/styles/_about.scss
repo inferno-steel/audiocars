@@ -1,0 +1,67 @@
+.about {
+    text-transform: uppercase;
+
+    &__wrapper {
+        max-width: 584px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: end;
+
+        span {
+            display: block;
+            text-align: inherit;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__slogan {
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        margin-bottom: 30px;
+    }
+
+    &__box:last-child {
+        margin-bottom: 60px;
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        margin-left: 20px;
+        list-style: inherit;
+    }
+
+    &__item {
+        list-style: inherit;
+        list-style-image: url(../img/rectangle.png);
+        list-style-position: outside;
+        padding-left: 15px;
+        margin-bottom: 10px;
+    }
+
+    &__desc {
+        margin-bottom: 140px;
+        text-align: center;
+    }
+
+    @media (max-width: $tablet) {
+        &__title{
+            text-align: inherit;
+        }
+
+        &__desc{
+            margin-bottom: 80px;
+        }
+    }
+}
