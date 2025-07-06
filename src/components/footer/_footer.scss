@@ -1,15 +1,22 @@
-.footer{
-    &__logotype{
+.footer {
+    &__logotype {
         text-align: center;
         margin-bottom: 25px;
     }
 
-    &__logo{
+    &__logo {
         @include adaptive("width", 338, 163, 1);
-    }    
+    }
+
+    @media (max-width: $tabletM) {
+        &__logotype {
+            margin: 25px auto;
+            width: 163px;
+        }
+    }
 }
 
-.body-footer{
+.body-footer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
@@ -18,23 +25,23 @@
         flex-direction: column;
         row-gap: 22px;
 
-        a{
+        a {
             padding: 0;
         }
 
-        a:hover{
+        a:hover {
             text-decoration: underline;
             background-color: inherit;
             color: #1e1e1e;
         }
     }
 
-    &__social{
+    &__social {
         display: flex;
         align-items: center;
         gap: 20px;
 
-        &::before{
+        &::before {
             content: "";
             display: block;
             width: 164px;
@@ -43,7 +50,7 @@
             flex-shrink: 2;
         }
 
-        &::after{
+        &::after {
             content: "";
             display: block;
             width: 164px;
@@ -53,7 +60,7 @@
         }
     }
 
-    &__contacts{
+    &__contacts {
         text-transform: uppercase;
     }
 
@@ -61,7 +68,7 @@
         flex-wrap: wrap;
         row-gap: 15px;
 
-        &__social{
+        &__social {
             order: 3;
             overflow: auto;
             margin: 0 auto;
@@ -69,7 +76,7 @@
     }
 }
 
-.social-footer{
+.social-footer {
     &__wrap {
         margin: 0 auto;
         position: relative;
@@ -79,22 +86,22 @@
     }
 }
 
-.footer-contacts{
+.footer-contacts {
     display: flex;
     flex-direction: column;
     gap: 20px;
     max-width: 152px;
 
-    &__title{
+    &__title {
         font-weight: 700;
     }
 
-    &__callback{
+    &__callback {
         align-items: baseline;
     }
 }
 
-.copyright{
+.copyright {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -103,19 +110,19 @@
     column-gap: 70px;
     font-size: 14px;
 
-    &__copy{
-        p{
+    &__copy {
+        p {
             color: #666;
             margin-bottom: 10px;
         }
 
-        a{
+        a {
             text-decoration: underline;
         }
     }
 
-    &__design{
-        a{
+    &__design {
+        a {
             color: $mainRed;
             text-decoration: underline;
             text-transform: uppercase;
@@ -124,7 +131,7 @@
     }
 
     @media (max-width: $mobile) {
-        &__copy{
+        &__copy {
             order: 2;
         }
     }
