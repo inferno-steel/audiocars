@@ -1,0 +1,86 @@
+.delivery {
+    text-transform: uppercase;
+
+    &__wrap {
+        display: flex;
+        margin-bottom: 140px;
+    }
+
+    &__box {
+        display: flex;
+        gap: 40px;
+        flex: 1 1 auto;
+        justify-content: space-between;
+    }
+
+    &__icons {
+        flex: 0 1 500px;
+    }
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__img:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    @media (max-width: $tablet) {
+        &__wrap {
+            flex-direction: column;
+            margin-bottom: 80px;
+        }
+
+        &__box {
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+
+        &__icons {
+            flex-basis: 0;
+        }
+
+        &__img:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.box-delivery {
+    &__title {
+        color: $mainRed;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    &__inner:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    &__list,
+    &__list li {
+        list-style: inherit;
+    }
+
+    &__list {
+        margin-left: 20px;
+    }
+
+    &__list li {
+        list-style-image: url(../img/rectangle.png);
+        list-style-position: outside;
+        padding-left: 15px;
+        margin-bottom: 10px;
+    }
+
+    &__list li::marker {
+        margin-right: 15px;
+    }
+}
