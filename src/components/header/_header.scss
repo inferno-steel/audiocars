@@ -1,4 +1,4 @@
-.header{
+.header {
     margin-bottom: 40px;
 
     @media (max-width: $tablet) {
@@ -13,7 +13,7 @@
     margin: 33px 0 30px 0;
     gap: 20px;
 
-    &__order{
+    &__order {
         order: 2;
         display: flex;
         position: relative;
@@ -27,38 +27,38 @@
         text-align: end;
         @include adaptive("margin-right", 150, 0, 1);
 
-        a{
+        a {
             display: inline-flex;
         }
     }
 
-    &__search{
+    &__search {
         margin-left: auto;
         order: 4;
         flex-shrink: 5;
         flex-basis: 300px;
     }
 
-    &__links{
+    &__links {
         order: 5;
     }
 
     @media (max-width: $tablet) {
         position: relative;
 
-        &__order{
+        &__order {
             order: 4;
             flex-shrink: 0;
         }
 
-        &__logotype{
+        &__logotype {
             flex-grow: 0;
             margin-left: auto;
             margin-right: auto;
             display: flex;
         }
 
-        &__search{
+        &__search {
             order: 6;
             margin: 0;
             flex-shrink: 0;
@@ -68,19 +68,19 @@
         &__burger-menu.burger-menu.burger-menu_visible .burger-menu__wrap {
             transform: translateX(100%);
         }
-    
+
         &__burger-menu.burger-menu.burger-menu_visible .burger-menu__btn {
-                span:nth-child(1) {
-                    transform: translateY(0) rotate(-45deg);
-                }
-    
-                span:nth-child(2){
-                    opacity: 0;
-                }
-            
-                span:nth-child(3) {
-                    transform: translateY(0) rotate(45deg);
-                }        
+            span:nth-child(1) {
+                transform: translateY(0) rotate(-45deg);
+            }
+
+            span:nth-child(2) {
+                opacity: 0;
+            }
+
+            span:nth-child(3) {
+                transform: translateY(0) rotate(45deg);
+            }
         }
     }
 }
@@ -97,7 +97,7 @@
     order: 1;
     flex-shrink: 0;
 
-    &__wrap{
+    &__wrap {
         position: absolute;
         width: 300px;
         text-align: center;
@@ -115,8 +115,8 @@
         position: absolute;
         width: 30px;
         height: 3px;
-        background-color: rgb(0,0,0);
-        transition: transform .5s,opacity .5s,background-color .5s
+        background-color: rgb(0, 0, 0);
+        transition: transform .5s, opacity .5s, background-color .5s
     }
 
     span:nth-child(1) {
@@ -137,32 +137,32 @@
     flex-direction: column;
     align-items: center;
 
-    &__phone{
+    &__phone {
 
-        &:hover{
+        &:hover {
             text-decoration: underline;
         }
     }
 
-    &__link{
+    &__link {
         text-transform: uppercase;
         color: #666;
         font-size: 14px;
         transition: 0.7s ease;
 
-        &:hover{
+        &:hover {
             color: $mainDark;
         }
     }
 }
 
-.order-top{
-    &__icon{
+.order-top {
+    &__icon {
         display: none;
     }
 
-    @media (max-width: $tablet){
-        &__callback{
+    @media (max-width: $tablet) {
+        &__callback {
             position: absolute;
             width: 200px;
             border-radius: 10px;
@@ -175,27 +175,28 @@
             border: 1px solid transparent;
             background: linear-gradient(#000, $mainWhite 0) padding-box, linear-gradient(139deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 160%) border-box;
 
-            &_visible{
+            &_visible {
                 visibility: visible;
                 opacity: 1;
             }
         }
 
-        &__icon{
+        &__icon {
             display: block;
         }
     }
 }
 
-.search-form{
+.search-form {
     padding-bottom: 5px;
     position: relative;
     top: 4px;
     border-bottom: 1px solid #676969;
     display: flex;
 
-    &__inner{
+    &__inner {
         display: flex;
+        width: 100%;
     }
 
     &__btn {
@@ -232,7 +233,7 @@
             position: static;
         }
 
-        &__inner{
+        &__inner {
             position: absolute;
             border-radius: 10px;
             padding: 10px 20px;
@@ -243,7 +244,7 @@
             left: 0;
             background: $mainWhite;
 
-            &::before{
+            &::before {
                 content: "";
                 position: absolute;
                 inset: -1px;
@@ -251,14 +252,14 @@
                 border-radius: 11px;
                 z-index: -1;
             }
-            
-            &_visible{
+
+            &_visible {
                 visibility: visible;
                 opacity: 1;
             }
         }
 
-        &__input{
+        &__input {
             padding-left: 0;
         }
     }
@@ -269,26 +270,26 @@
     @include adaptive("gap", 15, 5, 1);
     flex-shrink: 0;
 
-    a{
+    a {
         display: flex;
         flex-shrink: 0;
         padding: 8px;
         border-radius: 3px;
-        transition: 0.2s ease;   
+        transition: 0.2s ease;
 
-        &:hover{
+        &:hover {
             background-color: $mainRed;
             color: $mainWhite;
-    
-            .svg-favorite{
+
+            .svg-favorite {
                 stroke: $mainWhite;
-              }
-    
-            .svg-basket{
+            }
+
+            .svg-basket {
                 fill: $mainWhite;
             }
-    
-            .svg-users{
+
+            .svg-users {
                 stroke: $mainWhite;
             }
         }
@@ -296,32 +297,27 @@
 
     &__link:nth-child(2) {
         position: relative;
-    
-        span {
-            background-color: $mainRed;
-            position: absolute;
-            border-radius: 50%;
-            color: $mainWhite;
-            left: 20px;
-            bottom: 28px;
-            font-size: 12px;
-            padding: 2px 7px;
-        }
+    }
+
+    &__counter {
+        position: absolute;
+        left: 20px;
+        bottom: 28px;
     }
 
     @media (max-width: $tablet) {
 
-        &__link:not(:nth-child(2)){
+        &__link:not(:nth-child(2)) {
             display: none;
         }
 
-        a{
+        a {
             padding: 0;
 
-            &:hover{
+            &:hover {
                 background-color: transparent;
 
-                .svg-basket{
+                .svg-basket {
                     fill: $mainDark;
                 }
             }
@@ -340,33 +336,33 @@
         column-gap: 25px;
     }
 
-    &__link{
+    &__link {
         padding: 12px 22px;
         border-radius: 5px;
         transition: 0.2s ease;
 
-        &:hover{
+        &:hover {
             background-color: $mainRed;
             color: $mainWhite;
         }
     }
 
-    @media (max-width: $tablet){
-        &__list{
+    @media (max-width: $tablet) {
+        &__list {
             justify-content: start;
         }
     }
 }
 
 .header-bottom {
-    &__icons{
+    &__icons {
         display: none;
     }
 
     @media (max-width: $tablet) {
         margin-bottom: 25px;
 
-        &__wrap{
+        &__wrap {
             position: absolute;
             width: 280px;
             padding: 20px 30px;
@@ -379,60 +375,67 @@
             border: 1px solid transparent;
             background: linear-gradient(#000, $mainWhite 0) padding-box, linear-gradient(139deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 160%) border-box;
 
-            &_visible{
+            &_visible {
                 transform: translateX(105%);
             }
         }
 
-        &__list{
+        &__list {
             flex-direction: column;
             row-gap: 13px;
 
-            a{
+            a {
                 padding: 0;
 
-                &:hover{
+                &:hover {
                     background-color: inherit;
                     color: $mainDark;
                 }
-            }            
+            }
         }
 
-        &__icons{
+        &__icons {
             display: flex;
             flex-direction: column;
             gap: 12px;
             margin-bottom: 20px;
 
-            a{
+            a {
                 align-items: center;
             }
         }
 
-        &__link{
+        &__link {
             text-transform: uppercase;
 
-            &:nth-child(2){
+            &:nth-child(2) {
                 position: relative;
             }
 
-            .svg-basket{
+            .svg-basket {
                 width: 20px;
                 height: 20px;
             }
 
-            svg{
+            svg {
                 margin-right: 14px;
             }
 
-            span{
-                background-color: #a33419;
-                border-radius: 50%;
-                color: #d4d4d4;
-                font-size: 12px;
+            span {
                 margin-left: 20px;
-                padding: 2px 8px;
             }
         }
     }
+}
+
+.basket-counter {
+    background-color: $mainRed;
+    border-radius: 50%;
+    color: $mainWhite;
+    font-size: 12px;
+    line-height: 1;
+    align-content: center;
+    text-align: center;
+    min-width: 22px;
+    min-height: 22px;
 }
