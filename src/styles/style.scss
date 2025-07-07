@@ -60,8 +60,14 @@ body {
   font-family: "Wadik";
   color: $mainRed;
   @include adaptive("font-size", 48, 24, 1);
-  text-align: center;
+  text-align: end;
   margin-bottom: 40px;
+  max-width: 968px;
+
+  @media (max-width: $tablet) {
+    text-align: start;
+  }
+
 }
 
 // Карточка товара БЭМ
