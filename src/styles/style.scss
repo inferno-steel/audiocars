@@ -181,15 +181,16 @@ body {
   }
 }
 
-// Кастомный чекбокс
-.checkbox-custom {
-  border-radius: 5px;
 
-  &::after {
-    content: "&#10003";
-    background-color: transparent;
-  }
+// 1 способ бордера
+.test-radius__small {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: linear-gradient(#000, $mainWhite 0) padding-box, linear-gradient(139deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 160%) border-box;
 }
+
+
+// 2 способ бордера
 
 // Кастомный бордер
 .border-custom {
@@ -206,6 +207,25 @@ body {
     border-radius: 11px;
     z-index: -1;
     transition: 0.7s ease;
+  }
+}
+
+// Бордер radius 
+.border-custom__radius_small {
+  border-radius: 5px;
+
+  &::before {
+    border-radius: 6px;
+  }
+}
+
+// Кастомный чекбокс
+.checkbox-custom {
+  border-radius: 5px;
+
+  &::after {
+    content: "&#10003";
+    background-color: transparent;
   }
 }
 

@@ -13,26 +13,14 @@
     &__list {
         display: flex;
         gap: 19px;
-        position: relative;
-        border-radius: 5px;
-        background: $mainWhite;
         flex-wrap: wrap;
         justify-content: center;
-
-        &::before {
-            content: "";
-            position: absolute;
-            inset: -1px;
-            background: $gradientSecond;
-            border-radius: 6px;
-            z-index: -1;
-        }
     }
 
     &__item {
         min-width: 130px;
         text-align: center;
-        padding: 6px 5px;
+        padding: 8px 5px;
         border-radius: 5px;
         cursor: pointer;
         transition: .2s ease;
@@ -74,7 +62,7 @@
 .price-sorting {
     display: flex;
     flex-direction: column;
-    padding: 6px 10px;
+    padding: 10px 10px;
     position: relative;
     border-radius: 5px;
     cursor: pointer;
@@ -96,7 +84,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 6px 10px;
+        padding: 10px 10px;
     }
 
     &__hidden {
@@ -227,19 +215,7 @@
 
     &__categories {
         margin-bottom: 34px;
-        position: relative;
-        border-radius: 5px;
-        background: $mainWhite;
         padding: 8px 10px;
-
-        &::before {
-            content: "";
-            position: absolute;
-            inset: -1px;
-            background: $gradientSecond;
-            border-radius: 5px;
-            z-index: -1;
-        }
     }
 
     &__content {
@@ -312,4 +288,8 @@
     &__text {
         font-size: 14px
     }
+}
+
+.test{
+    border: 1px solid #000;
 }
