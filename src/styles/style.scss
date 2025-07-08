@@ -75,17 +75,16 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px 30px;
-  position: relative;
-  border-radius: 10px;
-  background: $mainWhite;
+  cursor: pointer;
 
-  &::before {
-    content: "";
-    position: absolute;
-    inset: -1px;
-    background: $gradient;
-    border-radius: 11px;
-    z-index: -1;
+  &:hover::before {
+    background: none;
+  }
+
+  &:hover {
+    -webkit-box-shadow: 1px 1px 67px -4px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 1px 1px 67px -4px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 67px -4px rgba(0, 0, 0, 0.25);
   }
 
   &__image {
@@ -189,6 +188,24 @@ body {
   &::after {
     content: "&#10003";
     background-color: transparent;
+  }
+}
+
+// Кастомный бордер
+.border-custom {
+  position: relative;
+  border-radius: 10px;
+  background: $mainWhite;
+  transition: 0.7s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    background: $gradient;
+    border-radius: 11px;
+    z-index: -1;
+    transition: 0.7s ease;
   }
 }
 
