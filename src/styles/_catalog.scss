@@ -71,13 +71,10 @@
 
     &__wrap {
         position: absolute;
-        border: 1px solid transparent;
         top: -13px;
         left: 0;
         width: 100%;
         z-index: 2;
-        border-radius: 6px;
-        background: linear-gradient(#000, $mainWhite 0) padding-box, linear-gradient(175deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 160%) border-box;
     }
 
     &__visible {

@@ -1,127 +1,115 @@
-
-.account{
-    &__container{
-      display: flex;
-      justify-content: center;
-      margin: 60px 0;
-    }
-  
-    &__card{
-      flex-basis: 770px;
-    }
+.account {
+  &__container {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
   }
 
+  &__card {
+    flex-basis: 770px;
+  }
+}
+
 .registration {
-  
-  &__container{
+
+  &__container {
     display: flex;
     justify-content: center;
     margin-bottom: 140px;
   }
 
-  &__card{
+  &__card {
     flex-basis: 770px;
   }
 }
-  
+
 // Вход и регистрация
-.card-account{
-  &__title{
+.card-account {
+  &__title {
     color: $mainDark;
     margin-bottom: 20px;
   }
 
   &__registration {
-    p{
+    p {
       margin-bottom: 20px;
     }
 
-    a{
+    a {
       text-decoration: underline;
       display: inline-flex;
     }
   }
 
-  &__login{
-    p{
+  &__login {
+    p {
       margin-top: 20px;
     }
   }
 
   @media (max-width: $tablet) {
-    &__title{
+    &__title {
       text-align: center;
     }
   }
 }
 
 // Форма входа и регистрации
-.form-account{
+.form-account {
   display: flex;
   flex-direction: column;
   padding: 20px 30px;
   text-transform: uppercase;
   position: relative;
-  border-radius: 10px;
-  background: $mainWhite;
 
-  &::before{
-    content: "";
-    position: absolute;
-    inset: -1px;
-    background: $gradient;
-    border-radius: 11px;
-    z-index: -1;
-  }
-
-  &__label{
+  &__label {
     color: #666;
     margin-bottom: 10px;
   }
 
-  &__input{
+  &__input {
     border: 1.5px solid;
     border-radius: 5px;
     padding: 13px;
     margin-bottom: 30px;
   }
 
-  &__input:nth-child(4){
+  &__input:nth-child(4) {
     margin-bottom: 20px;
   }
 
-  &__inner{
+  &__inner {
     display: flex;
     gap: 40px;
     align-items: center;
     margin-bottom: 20px;
   }
 
-  &__btn{
+  &__btn {
     padding: 12px 10px;
     max-width: 288px;
     flex-grow: 2;
     border: 1px solid $mainRed;
     transition: .2s ease;
 
-    &:hover{
+    &:hover {
       background-color: $mainWhite;
       color: $mainRed;
       border: 1px solid $mainRed;
     }
   }
 
-  &__checkbox{
+  &__checkbox {
     cursor: pointer;
   }
 
-  &__link{
-    span{
+  &__link {
+    span {
       color: $mainRed;
     }
   }
 
-  p{
+  p {
     font-size: 14px;
   }
 }
