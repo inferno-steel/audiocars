@@ -121,3 +121,12 @@
     visibility: visible;
     opacity: 1;
 }
+
+.modal-login{
+    background-color: #D9D9D9;
+
+    &__wrap{
+        max-width: 770px;
+        padding: 30px;
+    }
+}

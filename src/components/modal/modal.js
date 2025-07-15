@@ -6,6 +6,8 @@ const modalAll = document.querySelectorAll('.modal');
 
 const firstModal = modalAll[0];
 
+const loginModal = modalAll[2];
+
 const modalBtnAll = document.querySelectorAll(".modal__btn");
 
 const lastModalBtn = Array.from(modalBtnAll).pop();
@@ -13,6 +15,14 @@ const lastModalBtn = Array.from(modalBtnAll).pop();
 const lastModal = Array.from(modalAll).pop();
 
 let closeIcon = document.querySelectorAll('.modal__close');
+
+console.log(modalAll);
+
+let loginBtn = document.querySelector(".actions-links__link:last-child");
+
+console.log(loginBtn);
+
+
 
 
 // Скрывает скролл у body при вызове модального окна
@@ -43,6 +53,11 @@ buttons.forEach((btn) => {
             firstModal.classList.add('modal-active');
             hiddenBodyModal();
     })
+})
+
+loginBtn.addEventListener("click", function () {
+	loginModal.classList.add('modal-active');
+	hiddenBodyModal();
 })
 
 // Вешаем клики на иконки закрытия модальных окон и удаляем активный класс с модального окна

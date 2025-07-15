@@ -269,6 +269,7 @@
         padding: 8px;
         border-radius: 3px;
         transition: 0.2s ease;
+        cursor: pointer;
 
         &:hover {
             background-color: $mainRed;

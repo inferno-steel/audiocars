@@ -121,6 +121,12 @@
         gap: 15px;
     }
 
+    &__label {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
     @media (max-width: $tablet) {
         order: 2;
 
@@ -226,32 +232,32 @@
     }
 }
 
-.modal-order{   
+.modal-order {
 
-    &__box{
+    &__box {
         margin-bottom: 20px;
 
-        &>label{
+        &>label {
             vertical-align: super;
             margin-left: 15px;
         }
     }
 
-    &__wrapper{
+    &__wrapper {
         margin-bottom: 30px;
     }
 
-    &__number{
+    &__number {
         max-width: 440px;
         margin-bottom: 10px;
     }
 
-    &__text{
+    &__text {
         display: block;
         margin-bottom: 10px;
     }
 
-    &__input{
+    &__input {
         border: 1.5px solid #000;
         border-radius: 5px;
         width: 100%;
@@ -260,22 +266,22 @@
         padding-left: 20px;
     }
 
-    &__date{
+    &__date {
         max-width: 172px;
         margin-bottom: 10px;
     }
 
-    &__inner{
+    &__inner {
         display: flex;
         gap: 10px;
         align-items: center;
     }
 
-    &__cvv{
+    &__cvv {
         max-width: 72px;
     }
-    
-    &__button{
+
+    &__button {
         width: 100%;
         padding: 12px 0;
     }

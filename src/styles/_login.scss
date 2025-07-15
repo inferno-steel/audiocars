@@ -28,6 +28,8 @@
   &__title {
     color: $mainDark;
     margin-bottom: 20px;
+    max-width: none;
+    text-align: center;
   }
 
   &__registration {
@@ -56,8 +58,6 @@
 
 // Форма входа и регистрации
 .form-account {
-  display: flex;
-  flex-direction: column;
   padding: 20px 30px;
   text-transform: uppercase;
   position: relative;
@@ -72,6 +72,7 @@
     border-radius: 5px;
     padding: 13px;
     margin-bottom: 30px;
+    width: 100%;
   }
 
   &__input:nth-child(4) {
@@ -83,14 +84,21 @@
     gap: 40px;
     align-items: center;
     margin-bottom: 20px;
+
+    label {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    span {
+      white-space: nowrap;
+    }
   }
 
   &__btn {
-    padding: 12px 10px;
-    max-width: 288px;
-    flex-grow: 2;
-    border: 1px solid $mainRed;
     transition: .2s ease;
+    flex-basis: 288px;
 
     &:hover {
       background-color: $mainWhite;
@@ -99,17 +107,20 @@
     }
   }
 
-  &__checkbox {
-    cursor: pointer;
-  }
-
   &__link {
     span {
       color: $mainRed;
+      margin-left: 15px;
     }
   }
 
   p {
     font-size: 14px;
+  }
+
+  @media (max-width: $tablet) {
+    &__inner {
+      gap: 30px;
+    }
   }
 }

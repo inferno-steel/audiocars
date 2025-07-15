@@ -63,7 +63,7 @@
                     </svg>
                     <span class="actions-links__counter basket-counter">0</span>
                 </a>
-                <a class="actions-links__link" href="login.html">
+                <a class="actions-links__link">
                     <svg class="svg-users">
                         <use xlink:href="img/icons/svg-sprite.svg#svg-users"></use>
                     </svg>
@@ -150,12 +150,16 @@
                         <div class="form-order__title">Выбор доставки:</div>
                         <div class="form-order__delivery">
                             <div class="form-order__box">
-                                <input class="form-order__radio radio-custom" type="radio" name="radio-delivery">
-                                <label>Доставит курьер (только по Самаре)</label>
+                                <label class="form-order__label">
+                                    <input class="form-order__radio radio-custom" type="radio"
+                                        name="radio-delivery">Доставит курьер (только по Самаре)
+                                    </label>
                             </div>
                             <div class="form-order__box">
-                                <input class="form-order__radio radio-custom" type="radio" name="radio-delivery">
-                                <label>Забрать в пункте выдачи</label>
+                                <label class="form-order__label">
+                                    <input class="form-order__radio radio-custom" type="radio" name="radio-delivery">
+                                    Забрать в пункте выдачи
+                                </label>
                             </div>
                         </div>
                         <div class="form-order__section-wrap">
@@ -213,9 +217,14 @@
                         </div>
                         <button class="form-order__button button">Оформить заказ</button>
                         <div class="form-order__copyright">
-                            <input class="form-order__checkbox checkbox-custom" type="checkbox">
-                            <label>Соглашаюсь с <span>Политикой Конфиденциальности</span> и <span>Договором
-                                    Оферты</span></label>
+                            <label class="form-order__label">
+                                <input class="form-order__checkbox checkbox-custom" type="checkbox">
+                                <p class="form-order__copy">
+                                    Соглашаюсь с <span>Политикой Конфиденциальности</span> и <span>Договором
+                                        Оферты</span>
+                                </p>
+
+                            </label>
                         </div>
                     </form>
                     <div class="order__list">
@@ -469,7 +478,7 @@
             <button class="modal-call__btn modal__btn">Отправить</button>
         </div>
         <p class="modal-call__copyright">Нажимая на кнопку «Отправить»,
-            Вы даете согласие на обработку персональных данных в соответствии 
+            Вы даете согласие на обработку персональных данных в соответствии
             с <a href="#">Политикой конфиденциальности</a>
         </p>
     </div>
@@ -487,6 +496,37 @@
                 Менеджер свяжется с Вами в ближайшее время.
             </p>
             <button class="modal-success__btn modal__btn">За покупками</button>
+        </div>
+    </div>
+</div>
+<div class="modal-login modal">
+    <div class="modal-login__wrap modal__wrap">
+        <button class="modal-login__close modal__close">
+            <svg class="svg-close">
+                <use xlink:href="img/icons/svg-sprite.svg#svg-close"></use>
+            </svg>
+        </button>
+        <div class="modal-login__body card-account">
+            <h2 class="card-account__title title">Вход</h2>
+            <div class="card-account__login">
+                <form class="form-account">
+                    <label class="form-account__label">Имя пользователя или Номер телефона</label>
+                    <input class="form-account__input" type="text">
+                    <label class="form-account__label">Пароль</label>
+                    <input class="form-account__input" type="password">
+                    <div class="form-account__inner">
+                        <button class="form-account__btn modal__btn">Войти</button>
+                        <label>
+                            <input class="form-account__check checkbox-custom" type="checkbox">
+                            <span>Запомнить меня</span>
+                        </label>
+                    </div>
+                    <a class="form-account__link" href="registration.html">или <span>зарегистрируйтесь</span></a>
+                    <a class="form-account__link" href="#">
+                        <p>Забыли свой пароль?</p>
+                    </a>
+                </form>
+            </div>
         </div>
     </div>
 </div>
