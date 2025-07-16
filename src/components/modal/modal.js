@@ -57,13 +57,9 @@ buttons.forEach((btn) => {
 loginBtn.forEach((log) => {
 	log.addEventListener("click",function () {
 		loginModal.classList.add("modal-active");
+		hiddenBodyModal();
 	})
 })
-
-// loginBtn.addEventListener("click", function () {
-// 	loginModal.classList.add('modal-active');
-// 	hiddenBodyModal();
-// })
 
 // Вешаем клики на иконки закрытия модальных окон и удаляем активный класс с модального окна
 closeIcon.forEach((close) => {
