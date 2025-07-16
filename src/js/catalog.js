@@ -7,12 +7,12 @@ const priceSortingVisible = document.querySelector(".price-sorting__visible");
 const priceSortingHidden = document.querySelector(".price-sorting__hidden");
 
 filterBtn?.addEventListener("click", () => {
-    if (filterWrap.classList.contains('filter__wrap_active')){
+    if (filterWrap.classList.contains('filter__wrap_active')) {
         filterWrap.style.maxHeight = "0px";
         sortingCatalog.style.maxHeight = "0px";
         filterWrap.classList.remove('filter__wrap_active');
         sortingCatalog.classList.remove('catalog__sorting_active');
-    } else { 
+    } else {
         filterWrap.style.maxHeight = filterWrap.scrollHeight + "px";
         filterWrap.classList.add('filter__wrap_active');
         sortingCatalog.style.maxHeight = sortingCatalog.scrollHeight + "px";
@@ -34,7 +34,8 @@ titles.forEach(item => item.addEventListener('click', () => {
         contents.forEach(element => {
             element.classList.remove('filter__content_active');
             element.style.maxHeight = 0;
-            svg.style.transform = "rotate(0deg)"
+            element.previousElementSibling.lastElementChild.style.transform = "rotate(0deg)";
+            
         });
 
         titles.forEach(element => element.classList.remove('filter__inner_active'));
@@ -66,16 +67,16 @@ priceSortingVisible?.addEventListener("click", (e) => {
 
     document.addEventListener("click", (e) => {
         console.log(e._clickPriceSorting);
-        
+
         console.log(e.target.classList.contains('price-sorting__visible'));
-        
-        
-        
-        if (e._clickPriceSorting == true || 
+
+
+
+        if (e._clickPriceSorting == true ||
             e.composedPath().includes(priceSortingHidden) ||
             e.target.classList.contains('price-sorting__hidden')
-        ) return 
-            priceSortingHidden.style.maxHeight = "0px";
+        ) return
+        priceSortingHidden.style.maxHeight = "0px";
     })
 })
 
