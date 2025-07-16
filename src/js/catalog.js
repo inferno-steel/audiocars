@@ -58,6 +58,7 @@ const isEmpty = () => {
         return
     } else {
         priceSortingHidden.style.maxHeight = "0px";
+        priceSortingVisible.lastElementChild.style.transform = "rotate(0deg)";
     }
 }
 
@@ -68,8 +69,10 @@ priceSortingVisible?.addEventListener("click", (e) => {
     if (priceSortingHidden.style.maxHeight == "0px") {
         priceSortingHidden.classList.add("price-sorting__active")
         priceSortingHidden.style.maxHeight = priceSortingHidden.scrollHeight + "px";
+        priceSortingVisible.lastElementChild.style.transform = "rotate(180deg)";
     } else {
         priceSortingHidden.style.maxHeight = "0px";
+        priceSortingVisible.lastElementChild.style.transform = "rotate(0deg)";
     }
 
     document.addEventListener("click", (e) => {
@@ -84,6 +87,7 @@ priceSortingVisible?.addEventListener("click", (e) => {
             e.target.classList.contains('price-sorting__hidden')
         ) return
         priceSortingHidden.style.maxHeight = "0px";
+        priceSortingVisible.lastElementChild.style.transform = "rotate(0deg)";
     })
 })
 
