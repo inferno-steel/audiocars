@@ -6,6 +6,8 @@ const sortingCatalog = document.querySelector(".catalog__sorting");
 const priceSortingVisible = document.querySelector(".price-sorting__visible");
 const priceSortingHidden = document.querySelector(".price-sorting__hidden");
 
+
+// Открытие поп-аппа "фильтр" на мобильной версии
 filterBtn?.addEventListener("click", () => {
     if (filterWrap.classList.contains('filter__wrap_active')) {
         filterWrap.style.maxHeight = "0px";
@@ -20,6 +22,8 @@ filterBtn?.addEventListener("click", () => {
     }
 });
 
+
+// Открытие аккордиона с категориями
 titles.forEach(item => item.addEventListener('click', () => {
 
     const svg = item.lastElementChild;
@@ -47,6 +51,8 @@ titles.forEach(item => item.addEventListener('click', () => {
     }
 }));
 
+
+
 const isEmpty = () => {
     if (priceSortingHidden == null) {
         return
@@ -60,6 +66,7 @@ isEmpty();
 priceSortingVisible?.addEventListener("click", (e) => {
     e._clickPriceSorting = true;
     if (priceSortingHidden.style.maxHeight == "0px") {
+        priceSortingHidden.classList.add("price-sorting__active")
         priceSortingHidden.style.maxHeight = priceSortingHidden.scrollHeight + "px";
     } else {
         priceSortingHidden.style.maxHeight = "0px";

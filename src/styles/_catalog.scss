@@ -86,17 +86,23 @@
 
     &__hidden {
         max-height: 0px;
-        overflow: hidden;
+        opacity: 0;
         padding: 0 10px;
         box-sizing: content-box;
+        overflow: hidden;
+    }
+
+    &__active {
+        opacity: 1;
+        transition: max-height .5s ease-out, padding .5s ease-out, opacity .1s ease-out;
     }
 
     &__inner {
         margin-bottom: 15px;
 
-        label{
-            vertical-align: super;
-            margin-left: 20px;
+        label {
+            display: flex;
+            gap: 10px ;
         }
     }
 
@@ -287,6 +293,6 @@
     }
 }
 
-.test{
+.test {
     border: 1px solid #000;
 }
