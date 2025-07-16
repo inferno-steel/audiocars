@@ -123,4 +123,15 @@
       gap: 30px;
     }
   }
+
+  @media (max-width: $mobile) {
+    &__inner {
+
+      flex-wrap: wrap;
+      
+      span{
+        white-space: wrap;
+      }
+    }
+  }
 }
