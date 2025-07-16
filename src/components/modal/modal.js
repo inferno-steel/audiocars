@@ -16,9 +16,7 @@ const lastModal = Array.from(modalAll).pop();
 
 let closeIcon = document.querySelectorAll('.modal__close');
 
-console.log(modalAll);
-
-let loginBtn = document.querySelector(".actions-links__link:last-child");
+let loginBtn = document.querySelectorAll(".login-btn");
 
 console.log(loginBtn);
 
@@ -55,10 +53,17 @@ buttons.forEach((btn) => {
     })
 })
 
-loginBtn.addEventListener("click", function () {
-	loginModal.classList.add('modal-active');
-	hiddenBodyModal();
+
+loginBtn.forEach((log) => {
+	log.addEventListener("click",function () {
+		loginModal.classList.add("modal-active");
+	})
 })
+
+// loginBtn.addEventListener("click", function () {
+// 	loginModal.classList.add('modal-active');
+// 	hiddenBodyModal();
+// })
 
 // Вешаем клики на иконки закрытия модальных окон и удаляем активный класс с модального окна
 closeIcon.forEach((close) => {
