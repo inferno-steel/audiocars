@@ -14,6 +14,15 @@ const uglify = require('gulp-uglify-es').default;
 
 const autoprefixer = require('gulp-autoprefixer');
 
+const mysql = require("mysql2");
+  
+const connection = mysql.createConnection({
+  host: "31.31.197.29",
+  user: "u3130208_inferno",
+  database: "u3130208_audiocars",
+  password: "rT0uN4qW9jcI1jQ8"
+});
+
 
 // Функция преобразования scss в css, переименование директории и сжатие стилей
 function styles () {
